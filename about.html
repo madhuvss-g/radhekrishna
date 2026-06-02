@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Radhekrishna Enterprises</title>
+  <meta name="description" content="Learn about Radhekrishna Enterprises, a small-scale industry and sole manufacturer of G-MEX friction hinges with hardware supply capabilities since 1993." />
+
+  <meta property="og:title" content="About | Radhekrishna Enterprises" />
+  <meta property="og:description" content="Small-scale industry, sole manufacturer of G-MEX friction hinges, and hardware supplier, active since 1993." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="[Add website or Vercel URL here]/about.html" />
+  <meta property="og:image" content="[Add social preview image URL here]" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --text-xs: 0.75rem;
+      --text-sm: 0.875rem;
+      --text-base: 1rem;
+      --text-lg: 1.125rem;
+      --text-xl: 1.5rem;
+      --text-2xl: 2rem;
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+
+      --radius-sm: 0.4rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+
+      --color-bg: #f5f5f7;
+      --color-surface: #ffffff;
+      --color-surface-soft: #f9fafb;
+      --color-border: #e5e7eb;
+      --color-divider: #e5e5e5;
+      --color-text: #111827;
+      --color-text-muted: #4b5563;
+      --color-text-faint: #9ca3af;
+      --color-primary: #0f766e;
+      --color-primary-soft: #ecfdf5;
+
+      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
+      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
+
+      --content-width: 1120px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; text-size-adjust: none; scroll-padding-top: 4.5rem; }
+    body {
+      min-height: 100vh;
+      font-family: "General Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: var(--text-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: radial-gradient(circle at top, #e5f3f2 0, #f5f5f7 48%, #f3f4f6 100%);
+    }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: var(--space-4);
+      top: -3rem;
+      background: var(--color-primary);
+      color: #ffffff;
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-md);
+      z-index: 20;
+    }
+    .skip-link:focus { top: var(--space-4); }
+
+    .frame {
+      width: min(100% - 2.5rem, var(--content-width));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(18px);
+      background: rgba(245, 245, 247, 0.9);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 4rem;
+      gap: var(--space-4);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding-block: var(--space-2);
+    }
+    .brand-mark {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 0.7rem;
+      border: 1px solid var(--color-border);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    }
+    .brand-main {
+      font-family: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .brand-sub {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: var(--space-4);
+      font-size: var(--text-sm);
+    }
+    .nav-links a {
+      padding-block: var(--space-2);
+      color: var(--color-text-muted);
+      border-bottom: 2px solid transparent;
+      transition: color var(--transition), border-color var(--transition);
+    }
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    main section { padding-block: var(--space-10); }
+
+    .hero {
+      padding-block: var(--space-12);
+    }
+    .hero-grid {
+      display: grid;
+      gap: var(--space-8);
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-2);
+    }
+    h1 {
+      font-family: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: var(--text-2xl);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      max-width: 18ch;
+      margin-bottom: var(--space-3);
+    }
+    .hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 40ch;
+      margin-bottom: var(--space-4);
+    }
+    .hero-body {
+      color: var(--color-text-muted);
+      max-width: 50ch;
+    }
+
+    .hero-visual {
+      border-radius: 1.25rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-soft);
+    }
+    .hero-placeholder-box {
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--color-border);
+      padding: var(--space-4);
+      background: var(--color-surface-soft);
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+    }
+
+    .section-heading {
+      margin-bottom: var(--space-5);
+    }
+    .section-heading h2 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+    .section-heading p {
+      color: var(--color-text-muted);
+      max-width: 48ch;
+    }
+
+    .two-column {
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    .card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-3);
+    }
+    .card p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-2);
+    }
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .card li {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      padding-block: 0.25rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+    .badge {
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 420ms var(--transition), transform 420ms var(--transition);
+    }
+    .reveal--visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      border-top: 1px solid var(--color-divider);
+      padding-block: var(--space-6);
+      background: #f9fafb;
+      font-size: var(--text-sm);
+      color: var(--color-text-faint);
+    }
+    .footer-row {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    @media (min-width: 768px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.35fr) minmax(280px, 1fr);
+      }
+      .two-column {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      }
+      .footer-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-block: var(--space-2);
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="frame nav">
+      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
+            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
+            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>
+          <div class="brand-main">Radhekrishna Enterprises</div>
+          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="frame hero-grid">
+        <div class="reveal">
+          <p class="hero-eyebrow">About</p>
+          <h1>Small-scale manufacturer with a long, practical history.</h1>
+          <p class="hero-lead">
+            Radhekrishna Enterprises is a small-scale industry that has been active since 1993, serving under different names but staying focused on manufacturing and supplying hardware.
+          </p>
+          <p class="hero-body">
+            Today, the company is the sole manufacturer of G-MEX friction hinges and also supplies a wider range of hardware materials, including items that are not limited to metals. The goal is simple: make it easy for clients to get the hinges and related hardware they actually need.
+          </p>
+        </div>
+
+        <aside class="hero-visual reveal" aria-label="Placeholder for about-page imagery">
+          <div class="hero-placeholder-box">
+            <strong>Optional photo</strong><br />
+            This space can hold a photo of your workshop, storage area, or a simple team group photo.<br />
+            <br />
+            Recommended: wide image that feels calm and practical. When you are ready, replace this box with an &lt;img&gt; tag.
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STORY & FOCUS -->
+    <section>
+      <div class="frame two-column">
+        <article class="card reveal">
+          <h3>How the work has stayed consistent since 1993</h3>
+          <p>
+            The company’s history goes back to 1993. Over the years, it has served with different names, but the core work remained close to manufacturing and supplying real, everyday hardware.
+          </p>
+          <p>
+            That continuity means the current Radhekrishna Enterprises name carries experience from many years of serving clients with hinges and hardware, not a brand that appeared overnight.
+          </p>
+          <ul>
+            <li>• Active since 1993 as a small-scale industry</li>
+            <li>• Experience across different trading and business names</li>
+            <li>• Consistent focus on hinge and hardware supply work</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>What Radhekrishna Enterprises focuses on today</h3>
+          <p>
+            Today, the key focus is to manufacture G-MEX friction hinges and support that manufacturing with a practical hardware supply range.
+          </p>
+          <p>
+            That range is not limited to metals and can include hardware materials like plastic and other items that become part of the client’s project or product.
+          </p>
+          <div class="badge-row">
+            <span class="badge">Small-scale industry</span>
+            <span class="badge">Sole manufacturer of G-MEX friction hinges</span>
+            <span class="badge">Hinges & hardware supply</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLACEHOLDER FOR MORE DETAIL -->
+    <section>
+      <div class="frame">
+        <div class="card reveal">
+          <h3>More details you can add later</h3>
+          <p>
+            This section is intentionally left flexible. You can expand it with details that are true to the company, such as:
+          </p>
+          <ul>
+            <li>[Add note about the type of projects or applications you commonly support]</li>
+            <li>[Add short description of how orders and repeat business are usually handled]</li>
+            <li>[Add any values or working principles you want to highlight]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="frame footer-row">
+      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
+      <p>This about page stays close to the real story and leaves room for you to add more detail when you are ready.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !items.length) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal--visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach((el) => observer.observe(el));
+    }());
+  </script>
+</body>
+</html>
