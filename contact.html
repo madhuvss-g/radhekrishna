@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Requirements | Radhekrishna Enterprises</title>
+  <meta name="description" content="Share your hinge and hardware requirement with Radhekrishna Enterprises using a simple contact form." />
+
+  <meta property="og:title" content="Contact & Requirements | Radhekrishna Enterprises" />
+  <meta property="og:description" content="A simple enquiry form to send your G-MEX friction hinge and hardware requirements." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="[Add website or Vercel URL here]/contact.html" />
+  <meta property="og:image" content="[Add social preview image URL here]" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --text-xs: 0.75rem;
+      --text-sm: 0.875rem;
+      --text-base: 1rem;
+      --text-lg: 1.125rem;
+      --text-xl: 1.5rem;
+      --text-2xl: 2rem;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --radius-sm: 0.4rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1rem;
+      --color-bg: #f5f5f7;
+      --color-surface: #ffffff;
+      --color-surface-soft: #f9fafb;
+      --color-border: #e5e7eb;
+      --color-divider: #e5e5e5;
+      --color-text: #111827;
+      --color-text-muted: #4b5563;
+      --color-text-faint: #9ca3af;
+      --color-primary: #0f766e;
+      --color-primary-soft: #ecfdf5;
+      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
+      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
+      --content-width: 720px;
+    }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; text-size-adjust:none; scroll-padding-top:4.5rem; }
+    body {
+      min-height:100vh;
+      font-family:"General Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:var(--text-base); line-height:1.6;
+      color:var(--color-text);
+      background:radial-gradient(circle at top,#e5f3f2 0,#f5f5f7 48%,#f3f4f6 100%);
+    }
+    a { color:inherit; text-decoration:none; }
+    button, input, textarea { font:inherit; color:inherit; }
+    :focus-visible { outline:2px solid var(--color-primary); outline-offset:3px; border-radius:var(--radius-sm); }
+
+    .skip-link { position:absolute; left:var(--space-4); top:-3rem; background:var(--color-primary); color:#fff; padding:var(--space-2)var(--space-4); border-radius:var(--radius-md); z-index:20;}
+    .skip-link:focus { top:var(--space-4); }
+
+    .frame { width:min(100% - 2.5rem,var(--content-width)); margin-inline:auto; }
+
+    header {
+      position:sticky; top:0; z-index:30;
+      backdrop-filter:blur(18px); background:rgba(245,245,247,0.9);
+      border-bottom:1px solid rgba(229,231,235,0.8);
+    }
+    .nav { width:min(100% - 2.5rem,1120px); margin-inline:auto; display:flex; align-items:center; justify-content:space-between; min-height:4rem; gap:var(--space-4); }
+    .brand { display:inline-flex; align-items:center; gap:var(--space-3); padding-block:var(--space-2); }
+    .brand-mark {
+      width:2.4rem; height:2.4rem; border-radius:0.7rem; border:1px solid var(--color-border);
+      background:#fff; display:flex; align-items:center; justify-content:center;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+    }
+    .brand-main {
+      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+      font-size:var(--text-sm); font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
+    }
+    .brand-sub { font-size:var(--text-xs); color:var(--color-text-faint); }
+    .nav-links { display:flex; list-style:none; gap:var(--space-4); font-size:var(--text-sm); }
+    .nav-links a {
+      padding-block:var(--space-2); color:var(--color-text-muted);
+      border-bottom:2px solid transparent;
+      transition:color var(--transition), border-color var(--transition);
+    }
+    .nav-links a:hover,
+    .nav-links a:focus-visible { color:var(--color-primary); border-color:var(--color-primary); }
+
+    main section { padding-block:var(--space-10); }
+
+    h1 {
+      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+      font-size:var(--text-2xl); line-height:1.1; letter-spacing:-0.04em;
+      margin-bottom:var(--space-3);
+    }
+    .hero-eyebrow {
+      font-size:var(--text-xs); text-transform:uppercase; letter-spacing:0.14em;
+      color:var(--color-text-faint); margin-bottom:var(--space-2);
+    }
+    .hero-lead { font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-4); }
+    .hero-body { color:var(--color-text-muted); margin-bottom:var(--space-6); }
+
+    .card {
+      background:var(--color-surface); border-radius:var(--radius-lg); border:1px solid var(--color-border);
+      padding:var(--space-6); box-shadow:var(--shadow-card);
+    }
+
+    .form-grid { display:grid; gap:var(--space-4); }
+    label { display:block; font-size:var(--text-sm); font-weight:500; margin-bottom:0.35rem; }
+    .hint { font-size:var(--text-xs); color:var(--color-text-faint); margin-top:0.2rem; }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width:100%;
+      padding:0.65rem 0.75rem;
+      border-radius:0.5rem;
+      border:1px solid var(--color-border);
+      font-size:var(--text-sm);
+      background:#ffffff;
+      transition:border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+    input:focus-visible,
+    textarea:focus-visible {
+      border-color:var(--color-primary);
+      box-shadow:0 0 0 1px var(--color-primary-soft);
+      background:#ffffff;
+    }
+    textarea { min-height:8rem; resize:vertical; }
+
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      min-height:2.75rem; padding:0.75rem 1.5rem;
+      border-radius:999px; border:1px solid transparent;
+      font-size:var(--text-sm); font-weight:500; cursor:pointer;
+      background:var(--color-primary); color:#fff;
+      box-shadow:0 12px 30px rgba(15,23,42,0.18);
+      transition:background var(--transition), box-shadow var(--transition), transform var(--transition);
+    }
+    .btn:hover {
+      background:#115e59; transform:translateY(-1px);
+      box-shadow:0 18px 45px rgba(15,23,42,0.18);
+    }
+
+    .contact-details { margin-top:var(--space-6); font-size:var(--text-sm); color:var(--color-text-muted); }
+    .contact-details p + p { margin-top:0.25rem; }
+
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 420ms var(--transition), transform 420ms var(--transition); }
+    .reveal--visible { opacity:1; transform:translateY(0); }
+
+    footer {
+      border-top:1px solid var(--color-divider); padding-block:var(--space-6);
+      background:#f9fafb; font-size:var(--text-sm); color:var(--color-text-faint);
+    }
+    .footer-row { width:min(100% - 2.5rem,1120px); margin-inline:auto; display:flex; flex-direction:column; gap:var(--space-2); }
+
+    @media (max-width:767px) {
+      .nav { flex-direction:column; align-items:flex-start; padding-block:var(--space-2); }
+      .nav-links { width:100%; justify-content:flex-start; overflow-x:auto; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="nav">
+      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
+            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
+            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>
+          <div class="brand-main">Radhekrishna Enterprises</div>
+          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="frame">
+        <header class="reveal" style="margin-bottom: var(--space-6);">
+          <p class="hero-eyebrow">Contact</p>
+          <h1>Share your hinge and hardware requirement in one message.</h1>
+          <p class="hero-lead">
+            This form is designed for practical, day-to-day enquiries. Use it to describe what you need in your own words.
+          </p>
+          <p class="hero-body">
+            You can mention G-MEX friction hinges, other hinges, or hardware materials such as plastic or metal items. Keep it simple and clear — it does not have to be in perfect technical language.
+          </p>
+        </header>
+
+        <section class="card reveal" aria-label="Requirement and contact form">
+          <!-- IMPORTANT: Replace the action value with your Formspree endpoint or other form handler -->
+          <form class="form-grid" action="[Add Formspree endpoint here]" method="POST">
+            <div>
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <p class="hint">Use an email where you want to receive the reply.</p>
+            </div>
+
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input type="text" id="phone" name="phone" autocomplete="tel" />
+              <p class="hint">Include country and area code if you are outside your usual region.</p>
+            </div>
+
+            <div>
+              <label for="company">Company / organisation (optional)</label>
+              <input type="text" id="company" name="company" autocomplete="organization" />
+            </div>
+
+            <div>
+              <label for="request">Requirement details</label>
+              <textarea id="request" name="request" required></textarea>
+              <p class="hint">
+                You can mention hinge types, approximate quantities, basic sizes, or hardware materials like plastic or metal items you are looking for.
+              </p>
+            </div>
+
+            <div>
+              <button type="submit" class="btn">Send requirement</button>
+            </div>
+          </form>
+
+          <div class="contact-details">
+            <p><strong>Other ways to reach out</strong></p>
+            <p>[Add phone number here]</p>
+            <p>[Add email address here]</p>
+            <p>[Add business address or city / area here]</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
+      <p>This form is kept straightforward on purpose, so it can be used for both small and large requirement notes.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !items.length) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal--visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach((el) => observer.observe(el));
+    }());
+  </script>
+</body>
+</html>
