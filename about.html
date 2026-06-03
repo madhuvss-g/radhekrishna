@@ -1,454 +1,972 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Radhekrishna Enterprises</title>
-  <meta name="description" content="Learn about Radhekrishna Enterprises, a small-scale industry and sole manufacturer of G-MEX friction hinges with hardware supply capabilities since 1993." />
+  <title>About Us | Radhekrishna Enterprises — Hinge Manufacturer Since 1993</title>
+  <meta name="description" content="Learn about Radhekrishna Enterprises — founded in 1993 by Badarinath Gattupalli in Hyderabad. Manufacturer of pivot hinges, stay hinges and hardware supplier across India." />
+  <meta name="keywords" content="about Radhekrishna Enterprises, hinge manufacturer Hyderabad history, Badarinath Gattupalli, hardware supplier since 1993" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="About | Radhekrishna Enterprises" />
-  <meta property="og:description" content="Small-scale industry, sole manufacturer of G-MEX friction hinges, and hardware supplier, active since 1993." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Radhekrishna Enterprises | Hinge Manufacturer Since 1993" />
+  <meta property="og:description" content="Founded in 1993 by Badarinath Gattupalli. Manufacturer of pivot hinges, stay hinges and hardware supplier in Hyderabad." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="[Add website or Vercel URL here]/about.html" />
-  <meta property="og:image" content="[Add social preview image URL here]" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:url" content="https://madhuvss-g.github.io/radhekrishna/about.html" />
+  <meta name="theme-color" content="#0a5c7a" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('rke-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    }());
+  </script>
 
   <style>
-    :root {
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1rem;
-      --text-lg: 1.125rem;
-      --text-xl: 1.5rem;
-      --text-2xl: 2rem;
+    /* ── About page specific styles ── */
 
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-
-      --radius-sm: 0.4rem;
-      --radius-md: 0.75rem;
-      --radius-lg: 1rem;
-
-      --color-bg: #f5f5f7;
-      --color-surface: #ffffff;
-      --color-surface-soft: #f9fafb;
-      --color-border: #e5e7eb;
-      --color-divider: #e5e5e5;
-      --color-text: #111827;
-      --color-text-muted: #4b5563;
-      --color-text-faint: #9ca3af;
-      --color-primary: #0f766e;
-      --color-primary-soft: #ecfdf5;
-
-      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
-      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
-
-      --content-width: 1120px;
+    /* Page Hero */
+    .page-hero {
+      position: relative;
+      padding-block: var(--space-16) var(--space-12);
+      overflow: hidden;
+      border-bottom: 1px solid var(--color-border);
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; text-size-adjust: none; scroll-padding-top: 4.5rem; }
-    body {
-      min-height: 100vh;
-      font-family: "General Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: var(--text-base);
-      line-height: 1.6;
-      color: var(--color-text);
-      background: radial-gradient(circle at top, #e5f3f2 0, #f5f5f7 48%, #f3f4f6 100%);
-    }
-    img, svg { display: block; max-width: 100%; height: auto; }
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; color: inherit; }
-
-    :focus-visible {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 3px;
-      border-radius: var(--radius-sm);
-    }
-
-    .skip-link {
+    .page-hero-bg {
       position: absolute;
-      left: var(--space-4);
-      top: -3rem;
-      background: var(--color-primary);
-      color: #ffffff;
-      padding: var(--space-2) var(--space-4);
-      border-radius: var(--radius-md);
-      z-index: 20;
-    }
-    .skip-link:focus { top: var(--space-4); }
-
-    .frame {
-      width: min(100% - 2.5rem, var(--content-width));
-      margin-inline: auto;
+      inset: 0;
+      background: var(--gradient-hero);
+      pointer-events: none;
     }
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      backdrop-filter: blur(18px);
-      background: rgba(245, 245, 247, 0.9);
-      border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--color-border-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-border-soft) 1px, transparent 1px);
+      background-size: 52px 52px;
+      opacity: 0.4;
+      pointer-events: none;
     }
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 4rem;
-      gap: var(--space-4);
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
     }
 
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-3);
-      padding-block: var(--space-2);
-    }
-    .brand-mark {
-      width: 2.4rem;
-      height: 2.4rem;
-      border-radius: 0.7rem;
-      border: 1px solid var(--color-border);
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
-    }
-    .brand-main {
-      font-family: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
-      font-size: var(--text-sm);
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .brand-sub {
-      font-size: var(--text-xs);
-      color: var(--color-text-faint);
-    }
-
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: var(--space-4);
-      font-size: var(--text-sm);
-    }
-    .nav-links a {
-      padding-block: var(--space-2);
-      color: var(--color-text-muted);
-      border-bottom: 2px solid transparent;
-      transition: color var(--transition), border-color var(--transition);
-    }
-    .nav-links a:hover,
-    .nav-links a:focus-visible {
-      color: var(--color-primary);
-      border-color: var(--color-primary);
-    }
-
-    main section { padding-block: var(--space-10); }
-
-    .hero {
-      padding-block: var(--space-12);
-    }
-    .hero-grid {
-      display: grid;
-      gap: var(--space-8);
-      align-items: center;
-    }
-    .hero-eyebrow {
-      font-size: var(--text-xs);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--color-text-faint);
-      margin-bottom: var(--space-2);
-    }
-    h1 {
-      font-family: "Cabinet Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
-      font-size: var(--text-2xl);
-      line-height: 1.1;
-      letter-spacing: -0.04em;
-      max-width: 18ch;
-      margin-bottom: var(--space-3);
-    }
-    .hero-lead {
-      font-size: var(--text-lg);
-      color: var(--color-text-muted);
-      max-width: 40ch;
+    .page-hero h1 {
+      max-width: 20ch;
       margin-bottom: var(--space-4);
     }
-    .hero-body {
-      color: var(--color-text-muted);
-      max-width: 50ch;
+
+    .page-hero h1 em {
+      font-style: normal;
+      background: var(--gradient-peacock);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    .hero-visual {
-      border-radius: 1.25rem;
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      padding: var(--space-6);
-      box-shadow: var(--shadow-soft);
+    .page-hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      line-height: 1.75;
     }
-    .hero-placeholder-box {
-      border-radius: var(--radius-md);
-      border: 1px dashed var(--color-border);
-      padding: var(--space-4);
-      background: var(--color-surface-soft);
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: var(--space-8);
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0.65rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        var(--color-primary) 0%,
+        var(--color-secondary) 50%,
+        var(--color-highlight) 100%
+      );
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: var(--space-8);
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: calc(-1 * var(--space-8) + 0.35rem);
+      top: 0.35rem;
+      width: 0.65rem;
+      height: 0.65rem;
+      border-radius: 50%;
+      background: var(--gradient-peacock);
+      box-shadow: 0 0 0 3px var(--color-primary-soft);
+      flex-shrink: 0;
+    }
+
+    .timeline-year {
       font-size: var(--text-xs);
-      color: var(--color-text-faint);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-primary);
+      margin-bottom: var(--space-1);
     }
 
-    .section-heading {
-      margin-bottom: var(--space-5);
-    }
-    .section-heading h2 {
-      font-size: var(--text-xl);
+    .timeline-title {
+      font-family: "Cabinet Grotesk", system-ui, sans-serif;
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--color-text);
       margin-bottom: var(--space-2);
+      letter-spacing: -0.02em;
     }
-    .section-heading p {
+
+    .timeline-body {
+      font-size: var(--text-sm);
       color: var(--color-text-muted);
+      line-height: 1.7;
       max-width: 48ch;
     }
 
-    .two-column {
-      display: grid;
-      gap: var(--space-6);
+    /* Info table card */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    .card {
+    .info-table tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: background var(--transition);
+    }
+
+    .info-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .info-table tr:hover {
+      background: var(--color-primary-soft);
+    }
+
+    .info-table td {
+      padding: var(--space-3) var(--space-4);
+      font-size: var(--text-sm);
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      color: var(--color-text-faint);
+      font-weight: 600;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      width: 40%;
+      white-space: nowrap;
+    }
+
+    .info-table td:last-child {
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    /* Values grid */
+    .values-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .value-item {
+      display: flex;
+      gap: var(--space-4);
+      align-items: flex-start;
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
       background: var(--color-surface);
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .value-item:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background var(--transition);
+    }
+
+    .value-item:hover .value-icon {
+      background: var(--gradient-peacock);
+    }
+
+    .value-icon svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      color: var(--color-primary);
+      transition: color var(--transition);
+    }
+
+    .value-item:hover .value-icon svg {
+      color: #fff;
+    }
+
+    .value-content h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      margin-bottom: var(--space-1);
+      color: var(--color-text);
+    }
+
+    .value-content p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    /* Memberships */
+    .membership-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .membership-card {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .membership-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .membership-logo {
+      width: 3.5rem;
+      height: 3.5rem;
       border-radius: var(--radius-md);
       border: 1px solid var(--color-border);
-      padding: var(--space-5);
-      box-shadow: var(--shadow-card);
-    }
-
-    .card h3 {
-      font-size: var(--text-lg);
-      margin-bottom: var(--space-3);
-    }
-    .card p {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      margin-bottom: var(--space-2);
-    }
-    .card ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .card li {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      padding-block: 0.25rem;
-    }
-
-    .badge-row {
+      background: var(--color-surface-soft);
       display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
-      margin-top: var(--space-3);
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
     }
-    .badge {
-      padding: 0.15rem 0.6rem;
-      border-radius: 999px;
-      background: var(--color-primary-soft);
-      color: var(--color-primary);
+
+    .membership-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 0.4rem;
+    }
+
+    .membership-logo-placeholder {
+      font-family: "Cabinet Grotesk", system-ui, sans-serif;
       font-size: var(--text-xs);
+      font-weight: 700;
+      color: var(--color-primary);
+      text-align: center;
+      line-height: 1.2;
+      padding: var(--space-2);
     }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 420ms var(--transition), transform 420ms var(--transition);
-    }
-    .reveal--visible {
-      opacity: 1;
-      transform: translateY(0);
+    .membership-info h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-1);
     }
 
-    footer {
-      border-top: 1px solid var(--color-divider);
-      padding-block: var(--space-6);
-      background: #f9fafb;
-      font-size: var(--text-sm);
+    .membership-info p {
+      font-size: var(--text-xs);
       color: var(--color-text-faint);
-    }
-    .footer-row {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2);
+      line-height: 1.5;
     }
 
-    @media (min-width: 768px) {
-      .hero-grid {
-        grid-template-columns: minmax(0, 1.35fr) minmax(280px, 1fr);
+    /* Two column layout */
+    .about-grid {
+      display: grid;
+      gap: var(--space-12);
+      align-items: start;
+    }
+
+    @media (min-width: 1024px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
       }
-      .two-column {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+
+      .values-grid {
+        grid-template-columns: 1fr;
       }
-      .footer-row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+
+      .membership-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width: 767px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-block: var(--space-2);
+    @media (min-width: 640px) {
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .nav-links {
-        width: 100%;
-        justify-content: flex-start;
-        overflow-x: auto;
+
+      .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
 </head>
+
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" role="banner">
     <div class="frame nav">
-      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
+
+      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises — home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+              fill="rgba(255,255,255,0.9)" />
+            <circle cx="12" cy="8" r="2" fill="rgba(255,255,255,0.5)" />
+            <path d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              fill="rgba(255,255,255,0.7)" />
           </svg>
         </span>
-        <span>
-          <div class="brand-main">Radhekrishna Enterprises</div>
-          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
+        <span class="brand-text">
+          <span class="brand-main">Radhekrishna Enterprises</span>
+          <span class="brand-sub">Hinges &amp; Hardware · Since 1993</span>
         </span>
       </a>
+
       <nav aria-label="Primary navigation">
-        <ul class="nav-links">
+        <ul class="nav-links" role="list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="clients.html">Clients</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="nav-cta">
+          Get Quote
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
+  <!-- Mobile Menu -->
+  <nav
+    id="mobile-menu"
+    class="mobile-menu"
+    aria-label="Mobile navigation"
+  >
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="products.html">Products</a>
+    <a href="clients.html">Clients</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-menu-cta">Get a Quote →</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
   <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="frame hero-grid">
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="about-heading">
+      <div class="page-hero-bg"   aria-hidden="true"></div>
+      <div class="page-hero-grid" aria-hidden="true"></div>
+
+      <div class="frame page-hero-inner">
         <div class="reveal">
-          <p class="hero-eyebrow">About</p>
-          <h1>Small-scale manufacturer with a long, practical history.</h1>
-          <p class="hero-lead">
-            Radhekrishna Enterprises is a small-scale industry that has been active since 1993, serving under different names but staying focused on manufacturing and supplying hardware.
-          </p>
-          <p class="hero-body">
-            Today, the company is the sole manufacturer of G-MEX friction hinges and also supplies a wider range of hardware materials, including items that are not limited to metals. The goal is simple: make it easy for clients to get the hinges and related hardware they actually need.
+          <span class="eyebrow">About us</span>
+          <h1 id="about-heading">
+            Built on three decades of<br />
+            <em>real hardware work.</em>
+          </h1>
+          <p class="page-hero-lead">
+            Radhekrishna Enterprises is a sole proprietorship based in
+            Hyderabad, manufacturing and supplying hinges and hardware
+            since 1993. Founded by Badarinath Gattupalli, the business
+            has grown from a small trading operation into a manufacturer
+            with a wide supply network across Andhra Pradesh and Telangana.
           </p>
         </div>
-
-        <aside class="hero-visual reveal" aria-label="Placeholder for about-page imagery">
-          <div class="hero-placeholder-box">
-            <strong>Optional photo</strong><br />
-            This space can hold a photo of your workshop, storage area, or a simple team group photo.<br />
-            <br />
-            Recommended: wide image that feels calm and practical. When you are ready, replace this box with an &lt;img&gt; tag.
-          </div>
-        </aside>
       </div>
     </section>
 
-    <!-- STORY & FOCUS -->
-    <section>
-      <div class="frame two-column">
-        <article class="card reveal">
-          <h3>How the work has stayed consistent since 1993</h3>
-          <p>
-            The company’s history goes back to 1993. Over the years, it has served with different names, but the core work remained close to manufacturing and supplying real, everyday hardware.
-          </p>
-          <p>
-            That continuity means the current Radhekrishna Enterprises name carries experience from many years of serving clients with hinges and hardware, not a brand that appeared overnight.
-          </p>
-          <ul>
-            <li>• Active since 1993 as a small-scale industry</li>
-            <li>• Experience across different trading and business names</li>
-            <li>• Consistent focus on hinge and hardware supply work</li>
-          </ul>
-        </article>
+    <!-- ── STORY + INFO ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="story-heading"
+      style="background: var(--color-bg);"
+    >
+      <div class="frame about-grid">
 
-        <article class="card reveal">
-          <h3>What Radhekrishna Enterprises focuses on today</h3>
-          <p>
-            Today, the key focus is to manufacture G-MEX friction hinges and support that manufacturing with a practical hardware supply range.
-          </p>
-          <p>
-            That range is not limited to metals and can include hardware materials like plastic and other items that become part of the client’s project or product.
-          </p>
-          <div class="badge-row">
-            <span class="badge">Small-scale industry</span>
-            <span class="badge">Sole manufacturer of G-MEX friction hinges</span>
-            <span class="badge">Hinges & hardware supply</span>
+        <!-- Left: Timeline -->
+        <div>
+          <div class="reveal">
+            <span class="eyebrow">Our story</span>
+            <h2 id="story-heading"
+              style="margin-bottom: var(--space-8);">
+              From 1993 to today.
+            </h2>
           </div>
-        </article>
+
+          <div class="timeline">
+
+            <div class="timeline-item reveal delay-1">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">1993</div>
+              <div class="timeline-title">The beginning</div>
+              <p class="timeline-body">
+                Badarinath Gattupalli starts a small hardware trading
+                and manufacturing business in Hyderabad. The focus from
+                day one is on hinges and hardware for the construction
+                and fabrication industry.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-2">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">1993 – 2009</div>
+              <div class="timeline-title">Sudarshan Enterprises</div>
+              <p class="timeline-body">
+                The business operates under the name Sudarshan Enterprises,
+                building relationships with dealers, contractors and
+                construction companies across Andhra Pradesh and Telangana.
+                The core work — manufacturing and supplying hinges — stays
+                consistent throughout.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-3">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">2009</div>
+              <div class="timeline-title">Radhekrishna Enterprises</div>
+              <p class="timeline-body">
+                The business is re-registered as Radhekrishna Enterprises.
+                The name carries the spirit of Lord Krishna — a name chosen
+                with meaning and intention. The work continues without
+                interruption.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-4">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">2017</div>
+              <div class="timeline-title">GST Registration</div>
+              <p class="timeline-body">
+                Radhekrishna Enterprises registers under GST in July 2017,
+                formalising the business further and making it easier for
+                corporate and government-linked clients to work with us.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-5">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">Today</div>
+              <div class="timeline-title">Manufacturing &amp; supply, expanded</div>
+              <p class="timeline-body">
+                Today, Radhekrishna Enterprises manufactures pivot hinges,
+                stay hinges and friction stays, and supplies a wide range
+                of hardware on demand. Clients include NCL Buildtek,
+                DEC Infra, Ahlada and many more dealers and contractors
+                across India.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Info card + values -->
+        <div style="display: flex; flex-direction: column;
+                    gap: var(--space-6);">
+
+          <!-- Company info table -->
+          <div class="card reveal">
+            <span class="eyebrow"
+              style="margin-bottom: var(--space-4);">
+              Company details
+            </span>
+            <table class="info-table" aria-label="Company information">
+              <tbody>
+                <tr>
+                  <td>Legal Name</td>
+                  <td>Radhekrishna Enterprises</td>
+                </tr>
+                <tr>
+                  <td>Owner</td>
+                  <td>Badarinath Gattupalli</td>
+                </tr>
+                <tr>
+                  <td>Business Type</td>
+                  <td>Sole Proprietorship</td>
+                </tr>
+                <tr>
+                  <td>In Business Since</td>
+                  <td>1993</td>
+                </tr>
+                <tr>
+                  <td>Current Name Since</td>
+                  <td>2009</td>
+                </tr>
+                <tr>
+                  <td>GST Registered</td>
+                  <td>Yes · July 2017</td>
+                </tr>
+                <tr>
+                  <td>Annual Turnover</td>
+                  <td>₹40 Lakh – ₹1.5 Crore</td>
+                </tr>
+                <tr>
+                  <td>Team Size</td>
+                  <td>Up to 10 people</td>
+                </tr>
+                <tr>
+                  <td>Location</td>
+                  <td>
+                    Fatehnagar, Balanagar,<br />
+                    Hyderabad – 500018
+                  </td>
+                </tr>
+                <tr>
+                  <td>Business Hours</td>
+                  <td>
+                    Tue – Sun: 9:00 AM – 5:30 PM<br />
+                    Monday &amp; Holidays: Closed
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Memberships -->
+          <div class="reveal">
+            <span class="eyebrow"
+              style="margin-bottom: var(--space-4);">
+              Memberships
+            </span>
+            <div class="membership-grid">
+
+              <div class="membership-card">
+                <div class="membership-logo">
+                  <img
+                    src="https://raw.githubusercontent.com/madhuvss-g/radhekrishna/main/images/logos/lub.png"
+                    alt="Laghu Udyog Bharti logo"
+                    loading="lazy"
+                    onerror="this.parentElement.innerHTML='<div class=\'membership-logo-placeholder\'>LUB</div>'"
+                  />
+                </div>
+                <div class="membership-info">
+                  <h3>Laghu Udyog Bharti</h3>
+                  <p>
+                    National organisation supporting small-scale
+                    industries across India.
+                  </p>
+                </div>
+              </div>
+
+              <div class="membership-card">
+                <div class="membership-logo">
+                  <img
+                    src="https://raw.githubusercontent.com/madhuvss-g/radhekrishna/main/images/logos/aiavif.png"
+                    alt="AIAVIF logo"
+                    loading="lazy"
+                    onerror="this.parentElement.innerHTML='<div class=\'membership-logo-placeholder\'>AIAVIF</div>'"
+                  />
+                </div>
+                <div class="membership-info">
+                  <h3>AIAVIF</h3>
+                  <p>
+                    Industry association for aluminium and
+                    window fabrication professionals.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- PLACEHOLDER FOR MORE DETAIL -->
-    <section>
+    <!-- ── VALUES ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="values-heading"
+      style="background: var(--color-surface);
+             border-top: 1px solid var(--color-border);"
+    >
       <div class="frame">
-        <div class="card reveal">
-          <h3>More details you can add later</h3>
-          <p>
-            This section is intentionally left flexible. You can expand it with details that are true to the company, such as:
-          </p>
-          <ul>
-            <li>[Add note about the type of projects or applications you commonly support]</li>
-            <li>[Add short description of how orders and repeat business are usually handled]</li>
-            <li>[Add any values or working principles you want to highlight]</li>
-          </ul>
+
+        <div class="section-header centered reveal">
+          <span class="eyebrow">How we work</span>
+          <h2 id="values-heading">
+            Simple principles that have kept<br />
+            clients coming back since 1993.
+          </h2>
+        </div>
+
+        <div class="values-grid">
+
+          <div class="value-item reveal delay-1">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="value-content">
+              <h3>Honest about what we have</h3>
+              <p>
+                We don't oversell. If a product is available,
+                we say so. If it isn't, we tell you that too —
+                and suggest what we can do instead.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item reveal delay-2">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="value-content">
+              <h3>Direct owner involvement</h3>
+              <p>
+                Badarinath Gattupalli handles enquiries personally.
+                You are not passed through layers of staff —
+                you speak to the person who knows the product.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item reveal delay-3">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                <polyline points="17 6 23 6 23 12"/>
+              </svg>
+            </div>
+            <div class="value-content">
+              <h3>Consistent quality over time</h3>
+              <p>
+                Repeat clients are the backbone of this business.
+                That only happens when the quality and pricing
+                stay consistent order after order.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-item reveal delay-4">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div class="value-content">
+              <h3>Practical response times</h3>
+              <p>
+                Enquiries are responded to quickly. For bulk
+                orders and repeat clients, we work to make
+                the process as smooth as possible.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- ── CTA ── -->
+    <section
+      class="section-pad-sm"
+      style="background: var(--color-bg);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+        <div class="cta-banner">
+          <div class="cta-banner-glow" aria-hidden="true"></div>
+          <div class="cta-banner-inner reveal">
+            <span class="eyebrow"
+              style="color: rgba(255,255,255,0.5);
+                     justify-content: center;
+                     margin-bottom: var(--space-4);">
+              Work with us
+            </span>
+            <h2 style="color:#fff; max-width:22ch; margin-inline:auto;
+                       margin-bottom: var(--space-4);">
+              Over 30 years of experience,<br />
+              ready for your next order.
+            </h2>
+            <p style="color:rgba(255,255,255,0.6); max-width:44ch;
+                      margin-inline:auto; margin-bottom: var(--space-8);">
+              Whether you need a bulk order of pivot hinges or a
+              specific hardware item sourced on demand — get in touch
+              and we'll respond directly.
+            </p>
+            <div class="cta-actions">
+              <a
+                href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+                class="btn btn-white btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  style="width:1.1rem;height:1.1rem;color:#25d366">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+              <a href="contact.html" class="btn btn-ghost-white btn-lg">
+                Contact Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <div class="frame footer-row">
-      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
-      <p>This about page stays close to the real story and leaves room for you to add more detail when you are ready.</p>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="frame">
+      <div class="footer-grid">
+
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+                  fill="rgba(255,255,255,0.9)" />
+                <circle cx="12" cy="8" r="2"
+                  fill="rgba(255,255,255,0.5)" />
+                <path d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+                  fill="rgba(255,255,255,0.7)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-main">Radhekrishna Enterprises</span>
+              <span class="brand-sub">Hinges &amp; Hardware · Since 1993</span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Manufacturer of pivot hinges, stay hinges and friction stays.
+            Hardware supplier to dealers, contractors and construction
+            companies across India. Based in Hyderabad since 1993.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Pages</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Products</p>
+          <nav class="footer-links" aria-label="Product links">
+            <a href="products.html#friction-stays">Window Friction Stays</a>
+            <a href="products.html#pivot-hinges">Pivot Hinges</a>
+            <a href="products.html#window-stays">Window Stays</a>
+            <a href="products.html#friction-hinges">Friction Hinges</a>
+            <a href="products.html#brass-stays">Brass Window Stays</a>
+            <a href="products.html#supply">Hardware Supply</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-links">
+            <a href="tel:+919849426939">+91 98494 26939</a>
+            <a href="mailto:gattupallibadari@gmail.com">
+              gattupallibadari@gmail.com
+            </a>
+            <a href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+              target="_blank" rel="noopener noreferrer">
+              Fatehnagar, Balanagar,<br />Hyderabad – 500018
+            </a>
+            <a href="https://wa.me/919849426939"
+              target="_blank" rel="noopener noreferrer">
+              WhatsApp →
+            </a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <p class="footer-col-title">Hours</p>
+            <p style="font-size: var(--text-xs);
+                      color: var(--color-text-faint);
+                      line-height: 1.8">
+              Tue – Sun: 9:00 AM – 5:30 PM<br />
+              Monday: Closed<br />
+              State &amp; National Holidays: Closed
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="footer-year">2025</span>
+          Radhekrishna Enterprises. All rights reserved.
+          Sole Proprietor: B. Gattupalli.
+        </p>
+        <div style="display:flex; gap: var(--space-5);
+                    flex-wrap: wrap; align-items: center;">
+          <span>GST Registered · Hyderabad</span>
+          <span>Member: Laghu Udyog Bharti</span>
+          <span>Member: AIAVIF</span>
+        </div>
+      </div>
+
     </div>
   </footer>
 
+  <!-- ============================================================
+       FLOATING WHATSAPP
+  ============================================================ -->
+  <a
+    href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="WhatsApp us"
+  >
+    <span class="whatsapp-float-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="script.js"></script>
   <script>
     (function () {
-      const items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) || !items.length) return;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      items.forEach((el) => observer.observe(el));
+      var el = document.getElementById('footer-year');
+      if (el) el.textContent = new Date().getFullYear();
     }());
   </script>
+
 </body>
 </html>
