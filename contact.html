@@ -1,288 +1,1174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Requirements | Radhekrishna Enterprises</title>
-  <meta name="description" content="Share your hinge and hardware requirement with Radhekrishna Enterprises using a simple contact form." />
+  <title>Contact | Radhekrishna Enterprises — Get a Quote</title>
+  <meta name="description" content="Contact Radhekrishna Enterprises for hinge and hardware enquiries. WhatsApp, call or use the contact form to share your requirement." />
+  <meta name="keywords" content="contact Radhekrishna Enterprises, hinge supplier enquiry, hardware quote Hyderabad, WhatsApp hinge supplier India" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Contact & Requirements | Radhekrishna Enterprises" />
-  <meta property="og:description" content="A simple enquiry form to send your G-MEX friction hinge and hardware requirements." />
+  <meta property="og:title" content="Contact | Radhekrishna Enterprises" />
+  <meta property="og:description" content="Share your hinge and hardware requirement with Radhekrishna Enterprises." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="[Add website or Vercel URL here]/contact.html" />
-  <meta property="og:image" content="[Add social preview image URL here]" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:url" content="https://madhuvss-g.github.io/radhekrishna/contact.html" />
+  <meta name="theme-color" content="#0a5c7a" />
 
   <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('rke-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    }());
+  </script>
 
   <style>
-    :root {
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1rem;
-      --text-lg: 1.125rem;
-      --text-xl: 1.5rem;
-      --text-2xl: 2rem;
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --radius-sm: 0.4rem;
-      --radius-md: 0.75rem;
-      --radius-lg: 1rem;
-      --color-bg: #f5f5f7;
-      --color-surface: #ffffff;
-      --color-surface-soft: #f9fafb;
-      --color-border: #e5e7eb;
-      --color-divider: #e5e5e5;
-      --color-text: #111827;
-      --color-text-muted: #4b5563;
-      --color-text-faint: #9ca3af;
-      --color-primary: #0f766e;
-      --color-primary-soft: #ecfdf5;
-      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
-      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
-      --content-width: 720px;
-    }
-    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
-    html { scroll-behavior:smooth; text-size-adjust:none; scroll-padding-top:4.5rem; }
-    body {
-      min-height:100vh;
-      font-family:"General Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      font-size:var(--text-base); line-height:1.6;
-      color:var(--color-text);
-      background:radial-gradient(circle at top,#e5f3f2 0,#f5f5f7 48%,#f3f4f6 100%);
-    }
-    a { color:inherit; text-decoration:none; }
-    button, input, textarea { font:inherit; color:inherit; }
-    :focus-visible { outline:2px solid var(--color-primary); outline-offset:3px; border-radius:var(--radius-sm); }
+    /* ── Contact page specific styles ── */
 
-    .skip-link { position:absolute; left:var(--space-4); top:-3rem; background:var(--color-primary); color:#fff; padding:var(--space-2)var(--space-4); border-radius:var(--radius-md); z-index:20;}
-    .skip-link:focus { top:var(--space-4); }
-
-    .frame { width:min(100% - 2.5rem,var(--content-width)); margin-inline:auto; }
-
-    header {
-      position:sticky; top:0; z-index:30;
-      backdrop-filter:blur(18px); background:rgba(245,245,247,0.9);
-      border-bottom:1px solid rgba(229,231,235,0.8);
-    }
-    .nav { width:min(100% - 2.5rem,1120px); margin-inline:auto; display:flex; align-items:center; justify-content:space-between; min-height:4rem; gap:var(--space-4); }
-    .brand { display:inline-flex; align-items:center; gap:var(--space-3); padding-block:var(--space-2); }
-    .brand-mark {
-      width:2.4rem; height:2.4rem; border-radius:0.7rem; border:1px solid var(--color-border);
-      background:#fff; display:flex; align-items:center; justify-content:center;
-      box-shadow:0 6px 18px rgba(15,23,42,0.06);
-    }
-    .brand-main {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-sm); font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
-    }
-    .brand-sub { font-size:var(--text-xs); color:var(--color-text-faint); }
-    .nav-links { display:flex; list-style:none; gap:var(--space-4); font-size:var(--text-sm); }
-    .nav-links a {
-      padding-block:var(--space-2); color:var(--color-text-muted);
-      border-bottom:2px solid transparent;
-      transition:color var(--transition), border-color var(--transition);
-    }
-    .nav-links a:hover,
-    .nav-links a:focus-visible { color:var(--color-primary); border-color:var(--color-primary); }
-
-    main section { padding-block:var(--space-10); }
-
-    h1 {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-2xl); line-height:1.1; letter-spacing:-0.04em;
-      margin-bottom:var(--space-3);
-    }
-    .hero-eyebrow {
-      font-size:var(--text-xs); text-transform:uppercase; letter-spacing:0.14em;
-      color:var(--color-text-faint); margin-bottom:var(--space-2);
-    }
-    .hero-lead { font-size:var(--text-lg); color:var(--color-text-muted); margin-bottom:var(--space-4); }
-    .hero-body { color:var(--color-text-muted); margin-bottom:var(--space-6); }
-
-    .card {
-      background:var(--color-surface); border-radius:var(--radius-lg); border:1px solid var(--color-border);
-      padding:var(--space-6); box-shadow:var(--shadow-card);
+    .page-hero {
+      position: relative;
+      padding-block: var(--space-16) var(--space-12);
+      overflow: hidden;
+      border-bottom: 1px solid var(--color-border);
     }
 
-    .form-grid { display:grid; gap:var(--space-4); }
-    label { display:block; font-size:var(--text-sm); font-weight:500; margin-bottom:0.35rem; }
-    .hint { font-size:var(--text-xs); color:var(--color-text-faint); margin-top:0.2rem; }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width:100%;
-      padding:0.65rem 0.75rem;
-      border-radius:0.5rem;
-      border:1px solid var(--color-border);
-      font-size:var(--text-sm);
-      background:#ffffff;
-      transition:border-color var(--transition), box-shadow var(--transition), background var(--transition);
-    }
-    input:focus-visible,
-    textarea:focus-visible {
-      border-color:var(--color-primary);
-      box-shadow:0 0 0 1px var(--color-primary-soft);
-      background:#ffffff;
-    }
-    textarea { min-height:8rem; resize:vertical; }
-
-    .btn {
-      display:inline-flex; align-items:center; justify-content:center;
-      min-height:2.75rem; padding:0.75rem 1.5rem;
-      border-radius:999px; border:1px solid transparent;
-      font-size:var(--text-sm); font-weight:500; cursor:pointer;
-      background:var(--color-primary); color:#fff;
-      box-shadow:0 12px 30px rgba(15,23,42,0.18);
-      transition:background var(--transition), box-shadow var(--transition), transform var(--transition);
-    }
-    .btn:hover {
-      background:#115e59; transform:translateY(-1px);
-      box-shadow:0 18px 45px rgba(15,23,42,0.18);
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-hero);
+      pointer-events: none;
     }
 
-    .contact-details { margin-top:var(--space-6); font-size:var(--text-sm); color:var(--color-text-muted); }
-    .contact-details p + p { margin-top:0.25rem; }
-
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity 420ms var(--transition), transform 420ms var(--transition); }
-    .reveal--visible { opacity:1; transform:translateY(0); }
-
-    footer {
-      border-top:1px solid var(--color-divider); padding-block:var(--space-6);
-      background:#f9fafb; font-size:var(--text-sm); color:var(--color-text-faint);
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--color-border-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-border-soft) 1px, transparent 1px);
+      background-size: 52px 52px;
+      opacity: 0.4;
+      pointer-events: none;
     }
-    .footer-row { width:min(100% - 2.5rem,1120px); margin-inline:auto; display:flex; flex-direction:column; gap:var(--space-2); }
 
-    @media (max-width:767px) {
-      .nav { flex-direction:column; align-items:flex-start; padding-block:var(--space-2); }
-      .nav-links { width:100%; justify-content:flex-start; overflow-x:auto; }
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-hero h1 {
+      max-width: 22ch;
+      margin-bottom: var(--space-4);
+    }
+
+    .page-hero h1 em {
+      font-style: normal;
+      background: var(--gradient-peacock);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      line-height: 1.75;
+    }
+
+    /* Contact layout */
+    .contact-grid {
+      display: grid;
+      gap: var(--space-10);
+      align-items: start;
+    }
+
+    /* Quick contact methods */
+    .quick-contact {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+
+    .quick-contact-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-4) var(--space-5);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      text-decoration: none;
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  transform var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .quick-contact-item:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .quick-contact-icon {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+
+    .quick-contact-item:hover .quick-contact-icon {
+      transform: scale(1.05);
+    }
+
+    .quick-contact-icon svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .quick-contact-icon-whatsapp {
+      background: #dcfce7;
+    }
+
+    .quick-contact-icon-whatsapp svg {
+      color: #16a34a;
+    }
+
+    .quick-contact-icon-phone {
+      background: var(--color-primary-soft);
+    }
+
+    .quick-contact-icon-phone svg {
+      color: var(--color-primary);
+    }
+
+    .quick-contact-icon-email {
+      background: var(--color-accent-soft);
+    }
+
+    .quick-contact-icon-email svg {
+      color: var(--color-accent);
+    }
+
+    .quick-contact-icon-map {
+      background: var(--color-secondary-soft);
+    }
+
+    .quick-contact-icon-map svg {
+      color: var(--color-secondary);
+    }
+
+    .quick-contact-label {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-faint);
+      margin-bottom: 0.15rem;
+    }
+
+    .quick-contact-value {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+
+    /* Business hours card */
+    .hours-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      padding: var(--space-5);
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .hours-card h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      margin-bottom: var(--space-4);
+      color: var(--color-text);
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: var(--space-2);
+      border-bottom: 1px solid var(--color-border);
+      font-size: var(--text-sm);
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .hours-day {
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+
+    .hours-time {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .hours-time.closed {
+      color: var(--color-text-faint);
+    }
+
+    .hours-open-dot {
+      display: inline-block;
+      width: 0.45rem;
+      height: 0.45rem;
+      border-radius: 50%;
+      background: #22c55e;
+      margin-right: var(--space-1);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    /* Map embed */
+    .map-container {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 16 / 9;
+      background: var(--color-surface-soft);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* Contact form card */
+    .contact-form-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--color-border);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-lg);
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .contact-form-card h2 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-2);
+    }
+
+    .contact-form-card .form-subtitle {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-6);
+      line-height: 1.65;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .form-row-2 {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    /* Form select arrow */
+    .form-select-wrap {
+      position: relative;
+    }
+
+    .form-select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid var(--color-text-faint);
+      pointer-events: none;
+    }
+
+    .form-select {
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    /* Submit button full width */
+    .btn-submit {
+      width: 100%;
+      min-height: 3rem;
+      border-radius: var(--radius-lg);
+      font-size: var(--text-base);
+    }
+
+    /* Success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: var(--space-8);
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    .form-success-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: #dcfce7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
+
+    .form-success-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #16a34a;
+    }
+
+    .form-success h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+
+    .form-success p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      max-width: 36ch;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+
+    /* Indiamart link */
+    .indiamart-strip {
+      background: var(--color-surface-soft);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4) var(--space-5);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .indiamart-strip p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+
+    .indiamart-strip strong {
+      color: var(--color-text);
+    }
+
+    @media (min-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      }
+
+      .form-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
-    <div class="nav">
-      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
+  <header class="site-header" role="banner">
+    <div class="frame nav">
+
+      <a href="index.html" class="brand"
+        aria-label="Radhekrishna Enterprises — home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+              fill="rgba(255,255,255,0.9)" />
+            <circle cx="12" cy="8" r="2"
+              fill="rgba(255,255,255,0.5)" />
+            <path
+              d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              fill="rgba(255,255,255,0.7)" />
           </svg>
         </span>
-        <span>
-          <div class="brand-main">Radhekrishna Enterprises</div>
-          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
+        <span class="brand-text">
+          <span class="brand-main">Radhekrishna Enterprises</span>
+          <span class="brand-sub">
+            Hinges &amp; Hardware · Since 1993
+          </span>
         </span>
       </a>
+
       <nav aria-label="Primary navigation">
-        <ul class="nav-links">
+        <ul class="nav-links" role="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="clients.html">Clients</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" aria-current="page">
+            Contact
+          </a></li>
         </ul>
       </nav>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="nav-cta"
+          aria-current="page">
+          Get Quote
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
+  <nav id="mobile-menu" class="mobile-menu"
+    aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="clients.html">Clients</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="contact.html" class="mobile-menu-cta">
+      Get a Quote →
+    </a>
+  </nav>
+
   <main id="main">
-    <section>
-      <div class="frame">
-        <header class="reveal" style="margin-bottom: var(--space-6);">
-          <p class="hero-eyebrow">Contact</p>
-          <h1>Share your hinge and hardware requirement in one message.</h1>
-          <p class="hero-lead">
-            This form is designed for practical, day-to-day enquiries. Use it to describe what you need in your own words.
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero"
+      aria-labelledby="contact-heading">
+      <div class="page-hero-bg"   aria-hidden="true"></div>
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="frame page-hero-inner">
+        <div class="reveal">
+          <span class="eyebrow">Contact us</span>
+          <h1 id="contact-heading">
+            Share your requirement.<br />
+            <em>We respond directly.</em>
+          </h1>
+          <p class="page-hero-lead">
+            WhatsApp, call or use the form below. Tell us
+            what you need — product, quantity, size or
+            material — and we will get back to you with
+            pricing and availability.
           </p>
-          <p class="hero-body">
-            You can mention G-MEX friction hinges, other hinges, or hardware materials such as plastic or metal items. Keep it simple and clear — it does not have to be in perfect technical language.
-          </p>
-        </header>
-
-        <section class="card reveal" aria-label="Requirement and contact form">
-          <!-- IMPORTANT: Replace the action value with your Formspree endpoint or other form handler -->
-          <form class="form-grid" action="[Add Formspree endpoint here]" method="POST">
-            <div>
-              <label for="name">Your name</label>
-              <input type="text" id="name" name="name" autocomplete="name" required />
-            </div>
-
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" autocomplete="email" required />
-              <p class="hint">Use an email where you want to receive the reply.</p>
-            </div>
-
-            <div>
-              <label for="phone">Phone (optional)</label>
-              <input type="text" id="phone" name="phone" autocomplete="tel" />
-              <p class="hint">Include country and area code if you are outside your usual region.</p>
-            </div>
-
-            <div>
-              <label for="company">Company / organisation (optional)</label>
-              <input type="text" id="company" name="company" autocomplete="organization" />
-            </div>
-
-            <div>
-              <label for="request">Requirement details</label>
-              <textarea id="request" name="request" required></textarea>
-              <p class="hint">
-                You can mention hinge types, approximate quantities, basic sizes, or hardware materials like plastic or metal items you are looking for.
-              </p>
-            </div>
-
-            <div>
-              <button type="submit" class="btn">Send requirement</button>
-            </div>
-          </form>
-
-          <div class="contact-details">
-            <p><strong>Other ways to reach out</strong></p>
-            <p>[Add phone number here]</p>
-            <p>[Add email address here]</p>
-            <p>[Add business address or city / area here]</p>
-          </div>
-        </section>
+        </div>
       </div>
     </section>
+
+    <!-- ── CONTACT CONTENT ── -->
+    <section
+      class="section-pad"
+      style="background: var(--color-bg);"
+    >
+      <div class="frame">
+        <div class="contact-grid">
+
+          <!-- ── LEFT: Contact info ── -->
+          <div style="display:flex; flex-direction:column;
+                      gap: var(--space-6);">
+
+            <!-- Quick contact methods -->
+            <div class="reveal">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-4);">
+                Reach us directly
+              </span>
+
+              <div class="quick-contact">
+
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+                  class="quick-contact-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp us"
+                >
+                  <div class="quick-contact-icon
+                    quick-contact-icon-whatsapp"
+                    aria-hidden="true">
+                    <svg viewBox="0 0 24 24"
+                      fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="quick-contact-label">
+                      WhatsApp
+                    </div>
+                    <div class="quick-contact-value">
+                      +91 98494 26939
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:+919849426939"
+                  class="quick-contact-item"
+                  aria-label="Call us"
+                >
+                  <div class="quick-contact-icon
+                    quick-contact-icon-phone"
+                    aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="quick-contact-label">
+                      Phone
+                    </div>
+                    <div class="quick-contact-value">
+                      +91 98494 26939
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:gattupallibadari@gmail.com"
+                  class="quick-contact-item"
+                  aria-label="Email us"
+                >
+                  <div class="quick-contact-icon
+                    quick-contact-icon-email"
+                    aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="quick-contact-label">
+                      Email
+                    </div>
+                    <div class="quick-contact-value">
+                      gattupallibadari@gmail.com
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+                  class="quick-contact-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View on Google Maps"
+                >
+                  <div class="quick-contact-icon
+                    quick-contact-icon-map"
+                    aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="quick-contact-label">
+                      Address
+                    </div>
+                    <div class="quick-contact-value">
+                      11-170/13, near Old Navatha Transport,<br />
+                      Fatehnagar, Balanagar,<br />
+                      Hyderabad – 500018
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Business hours -->
+            <div class="hours-card reveal">
+              <h3>Business Hours</h3>
+              <div class="hours-row">
+                <span class="hours-day">Monday</span>
+                <span class="hours-time closed">Closed</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">
+                  Tuesday – Sunday
+                </span>
+                <span class="hours-time">
+                  <span class="hours-open-dot"
+                    aria-hidden="true"></span>
+                  9:00 AM – 5:30 PM
+                </span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">
+                  State &amp; National Holidays
+                </span>
+                <span class="hours-time closed">Closed</span>
+              </div>
+            </div>
+
+            <!-- IndiaMart link -->
+            <div class="indiamart-strip reveal">
+              <p>
+                Also find us on
+                <strong>IndiaMart</strong> —
+                ratings and product listings available.
+              </p>
+              <a
+                href="https://www.indiamart.com/radhekrishna-enterprises-hyderabad/"
+                class="btn btn-outline btn-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View IndiaMart Profile →
+              </a>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container reveal">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8!2d78.4338!3d17.4599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI3JzM1LjYiTiA3OMKwMjYnMDEuNyJF!5e0!3m2!1sen!2sin!4v1234567890"
+                title="Radhekrishna Enterprises location on Google Maps"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+          </div>
+
+          <!-- ── RIGHT: Contact form ── -->
+          <div class="contact-form-card reveal">
+
+            <h2>Send your requirement</h2>
+            <p class="form-subtitle">
+              Fill in the form below. Your message will
+              open in WhatsApp so you can send it directly
+              to us. No account or login needed.
+            </p>
+
+            <!-- Form -->
+            <form
+              id="contact-form"
+              class="form-grid"
+              novalidate
+              aria-label="Contact and enquiry form"
+            >
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label
+                    for="name"
+                    class="form-label"
+                  >
+                    Your name
+                    <span aria-hidden="true"
+                      style="color:var(--color-primary);">
+                      *
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Full name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label
+                    for="phone"
+                    class="form-label"
+                  >
+                    Phone / WhatsApp
+                    <span aria-hidden="true"
+                      style="color:var(--color-primary);">
+                      *
+                    </span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="+91 XXXXX XXXXX"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label
+                    for="email"
+                    class="form-label"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label
+                    for="company"
+                    class="form-label"
+                  >
+                    Company / Organisation
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    class="form-input"
+                    placeholder="Company name"
+                    autocomplete="organization"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="product"
+                  class="form-label"
+                >
+                  Product interest
+                </label>
+                <div class="form-select-wrap">
+                  <select
+                    id="product"
+                    name="product"
+                    class="form-input form-select"
+                  >
+                    <option value="">
+                      Select a product category
+                    </option>
+                    <option value="Window Friction Stays">
+                      Window Friction Stays
+                    </option>
+                    <option value="Pivot Hinges">
+                      Pivot Hinges
+                    </option>
+                    <option value="Window Stays">
+                      Window Stays (I-Shape / 4-Bar)
+                    </option>
+                    <option value="Window Friction Hinges">
+                      Window Friction Hinges
+                    </option>
+                    <option value="Brass Window Stays">
+                      Brass Window Stays
+                    </option>
+                    <option value="Hardware Supply">
+                      Hardware Supply (Locks, Aldrops, etc.)
+                    </option>
+                    <option value="Other / Not sure">
+                      Other / Not sure
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="message"
+                  class="form-label"
+                >
+                  Requirement details
+                  <span aria-hidden="true"
+                    style="color:var(--color-primary);">
+                    *
+                  </span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Tell us what you need — product type, quantity, size, material or any other details. Plain language is fine."
+                  required
+                ></textarea>
+                <p class="form-hint">
+                  Example: "Need 500 units of 10-inch SS
+                  friction stays. Please share pricing
+                  and delivery time to Chennai."
+                </p>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-submit"
+              >
+                <svg viewBox="0 0 24 24"
+                  fill="currentColor"
+                  style="width:1.1rem;height:1.1rem;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Send via WhatsApp
+              </button>
+
+              <p style="font-size: var(--text-xs);
+                        color: var(--color-text-faint);
+                        text-align: center;
+                        line-height: 1.6;">
+                Clicking the button will open WhatsApp
+                with your message pre-filled. You can
+                review and send it from there.
+              </p>
+
+            </form>
+
+            <!-- Success state -->
+            <div
+              class="form-success"
+              id="form-success"
+              aria-live="polite"
+            >
+              <div class="form-success-icon"
+                aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3>WhatsApp opened!</h3>
+              <p>
+                Your message has been pre-filled in
+                WhatsApp. Just hit send and we will
+                get back to you as soon as possible.
+              </p>
+              <button
+                class="btn btn-outline"
+                style="margin-top: var(--space-5);"
+                id="form-reset-btn"
+              >
+                Send another message
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <div class="footer-row">
-      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
-      <p>This form is kept straightforward on purpose, so it can be used for both small and large requirement notes.</p>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="frame">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+                  fill="rgba(255,255,255,0.9)" />
+                <circle cx="12" cy="8" r="2"
+                  fill="rgba(255,255,255,0.5)" />
+                <path
+                  d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+                  fill="rgba(255,255,255,0.7)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-main">
+                Radhekrishna Enterprises
+              </span>
+              <span class="brand-sub">
+                Hinges &amp; Hardware · Since 1993
+              </span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Manufacturer of pivot hinges, stay hinges and
+            friction stays. Hardware supplier to dealers,
+            contractors and construction companies across
+            India. Based in Hyderabad since 1993.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">Pages</p>
+          <nav class="footer-links"
+            aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Products</p>
+          <nav class="footer-links"
+            aria-label="Product links">
+            <a href="products.html#friction-stays">
+              Window Friction Stays
+            </a>
+            <a href="products.html#pivot-hinges">
+              Pivot Hinges
+            </a>
+            <a href="products.html#window-stays">
+              Window Stays
+            </a>
+            <a href="products.html#friction-hinges">
+              Friction Hinges
+            </a>
+            <a href="products.html#brass-stays">
+              Brass Window Stays
+            </a>
+            <a href="products.html#supply">
+              Hardware Supply
+            </a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-links">
+            <a href="tel:+919849426939">
+              +91 98494 26939
+            </a>
+            <a href="mailto:gattupallibadari@gmail.com">
+              gattupallibadari@gmail.com
+            </a>
+            <a
+              href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fatehnagar, Balanagar,<br />
+              Hyderabad – 500018
+            </a>
+            <a
+              href="https://wa.me/919849426939"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp →
+            </a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <p class="footer-col-title">Hours</p>
+            <p style="font-size: var(--text-xs);
+                      color: var(--color-text-faint);
+                      line-height: 1.8;">
+              Tue – Sun: 9:00 AM – 5:30 PM<br />
+              Monday: Closed<br />
+              State &amp; National Holidays: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © <span id="footer-year">2025</span>
+          Radhekrishna Enterprises. All rights reserved.
+          Sole Proprietor: B. Gattupalli.
+        </p>
+        <div style="display:flex; gap: var(--space-5);
+                    flex-wrap:wrap; align-items:center;">
+          <span>GST Registered · Hyderabad</span>
+          <span>Member: Laghu Udyog Bharti</span>
+          <span>Member: AIAVIF</span>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="WhatsApp us"
+  >
+    <span class="whatsapp-float-pulse"
+      aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor"
+      aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
   <script>
     (function () {
-      const items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) || !items.length) return;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible');
-            observer.unobserve(entry.target);
+
+      /* Footer year */
+      var yearEl = document.getElementById('footer-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      /* ── Contact form → WhatsApp ── */
+      var form       = document.getElementById('contact-form');
+      var successDiv = document.getElementById('form-success');
+      var resetBtn   = document.getElementById('form-reset-btn');
+
+      if (form && successDiv) {
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          var name    = (form.querySelector('[name="name"]')?.value    || '').trim();
+          var phone   = (form.querySelector('[name="phone"]')?.value   || '').trim();
+          var email   = (form.querySelector('[name="email"]')?.value   || '').trim();
+          var company = (form.querySelector('[name="company"]')?.value || '').trim();
+          var product = (form.querySelector('[name="product"]')?.value || '').trim();
+          var message = (form.querySelector('[name="message"]')?.value || '').trim();
+
+          /* Validate required fields */
+          if (!name || !phone || !message) {
+            var firstEmpty = !name
+              ? form.querySelector('[name="name"]')
+              : !phone
+                ? form.querySelector('[name="phone"]')
+                : form.querySelector('[name="message"]');
+            if (firstEmpty) {
+              firstEmpty.focus();
+              firstEmpty.style.borderColor =
+                'var(--color-accent)';
+              setTimeout(function () {
+                firstEmpty.style.borderColor = '';
+              }, 2000);
+            }
+            return;
           }
+
+          /* Build WhatsApp message */
+          var lines = [
+            '👋 *New Enquiry — Radhekrishna Enterprises*',
+            '',
+            '*Name:* '    + name,
+            '*Phone:* '   + phone,
+            '*Email:* '   + (email   || 'Not provided'),
+            '*Company:* ' + (company || 'Not provided'),
+            '*Product:* ' + (product || 'Not specified'),
+            '',
+            '*Requirement:*',
+            message
+          ];
+
+          var waText = encodeURIComponent(lines.join('\n'));
+          var waURL  = 'https://wa.me/919849426939?text='
+                     + waText;
+
+          /* Open WhatsApp */
+          window.open(waURL, '_blank', 'noopener,noreferrer');
+
+          /* Show success */
+          form.style.display        = 'none';
+          successDiv.classList.add('visible');
+          successDiv.style.display  = 'block';
         });
-      }, { threshold: 0.15 });
-      items.forEach((el) => observer.observe(el));
+
+        /* Reset form */
+        if (resetBtn) {
+          resetBtn.addEventListener('click', function () {
+            form.reset();
+            form.style.display       = '';
+            successDiv.style.display = 'none';
+            successDiv.classList.remove('visible');
+          });
+        }
+
+      }
+
     }());
   </script>
+
 </body>
 </html>
