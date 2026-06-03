@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Radhekrishna Enterprises — Common Questions Answered</title>
+  <meta name="description" content="Frequently asked questions about ordering hinges and hardware from Radhekrishna Enterprises — MOQ, delivery, payment, product specs and more." />
+  <meta name="keywords" content="Radhekrishna Enterprises FAQ, hinge supplier questions, hardware order India, MOQ hinges, delivery time hinges" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="FAQ | Radhekrishna Enterprises" />
+  <meta property="og:description" content="Common questions about ordering hinges and hardware from Radhekrishna Enterprises." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://madhuvss-g.github.io/radhekrishna/faq.html" />
+  <meta name="theme-color" content="#0a5c7a" />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is there a minimum order quantity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no strict minimum order quantity. However, single-piece orders are not practical due to delivery costs. Bulk orders are preferred and get better pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do you deliver?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We currently serve Andhra Pradesh and Telangana strongly. We are open to pan-India and international orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you GST registered?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Radhekrishna Enterprises is GST registered since July 2017. GST invoices are provided for all orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I place an order?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can WhatsApp us, call us, or use the contact form on this website. Share your requirement — product, quantity and size — and we will respond with pricing and availability."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('rke-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    }());
+  </script>
+
+  <style>
+    /* ── FAQ page specific styles ── */
+
+    .page-hero {
+      position: relative;
+      padding-block: var(--space-16) var(--space-12);
+      overflow: hidden;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-hero);
+      pointer-events: none;
+    }
+
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--color-border-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-border-soft) 1px, transparent 1px);
+      background-size: 52px 52px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-hero h1 {
+      max-width: 22ch;
+      margin-bottom: var(--space-4);
+    }
+
+    .page-hero h1 em {
+      font-style: normal;
+      background: var(--gradient-peacock);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      line-height: 1.75;
+    }
+
+    /* FAQ category tabs */
+    .faq-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-8);
+    }
+
+    .faq-tab {
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--color-border);
+      background: var(--color-surface);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: background var(--transition),
+                  color var(--transition),
+                  border-color var(--transition);
+    }
+
+    .faq-tab:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background: var(--color-primary-soft);
+    }
+
+    .faq-tab.active {
+      background: var(--gradient-peacock);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    /* Accordion */
+    .faq-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      margin-bottom: var(--space-10);
+    }
+
+    .faq-group-title {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--color-text-faint);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-item {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .faq-item.open {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      padding: var(--space-5) var(--space-6);
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background var(--transition);
+    }
+
+    .faq-question:hover {
+      background: var(--color-primary-soft);
+    }
+
+    .faq-item.open .faq-question {
+      background: var(--color-primary-soft);
+    }
+
+    .faq-question-text {
+      font-family: "Cabinet Grotesk", system-ui, sans-serif;
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.4;
+      transition: color var(--transition-slow);
+    }
+
+    .faq-item.open .faq-question-text {
+      color: var(--color-primary);
+    }
+
+    .faq-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: var(--color-primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background var(--transition),
+                  transform var(--transition);
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--gradient-peacock);
+      transform: rotate(45deg);
+    }
+
+    .faq-icon svg {
+      width: 0.75rem;
+      height: 0.75rem;
+      color: var(--color-primary);
+      transition: color var(--transition);
+    }
+
+    .faq-item.open .faq-icon svg {
+      color: #fff;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 400ms var(--ease-out),
+                  padding var(--transition);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 var(--space-6) var(--space-5);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      border-top: 1px solid var(--color-border);
+      padding-top: var(--space-4);
+    }
+
+    .faq-answer-inner a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .faq-answer-inner ul {
+      margin-top: var(--space-3);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .faq-answer-inner li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+
+    .faq-answer-inner li::before {
+      content: '';
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background: var(--gradient-peacock);
+      flex-shrink: 0;
+      margin-top: 0.45rem;
+    }
+
+    /* Still have questions */
+    .still-questions {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      padding: var(--space-8);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-6);
+      align-items: center;
+      justify-content: space-between;
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .still-questions h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+
+    .still-questions p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      max-width: 44ch;
+      line-height: 1.7;
+    }
+
+    .still-questions-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="frame nav">
+
+      <a href="index.html" class="brand"
+        aria-label="Radhekrishna Enterprises — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+              fill="rgba(255,255,255,0.9)" />
+            <circle cx="12" cy="8" r="2"
+              fill="rgba(255,255,255,0.5)" />
+            <path
+              d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              fill="rgba(255,255,255,0.7)" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-main">Radhekrishna Enterprises</span>
+          <span class="brand-sub">
+            Hinges &amp; Hardware · Since 1993
+          </span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="faq.html" aria-current="page">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="nav-cta">
+          Get Quote
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu"
+    aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="clients.html">Clients</a>
+    <a href="faq.html" aria-current="page">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-menu-cta">
+      Get a Quote →
+    </a>
+  </nav>
+
+  <main id="main">
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="faq-heading">
+      <div class="page-hero-bg"   aria-hidden="true"></div>
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="frame page-hero-inner">
+        <div class="reveal">
+          <span class="eyebrow">FAQ</span>
+          <h1 id="faq-heading">
+            Common questions,<br />
+            <em>answered plainly.</em>
+          </h1>
+          <p class="page-hero-lead">
+            Questions about ordering, delivery, products and
+            payment — answered directly. If your question
+            is not here, WhatsApp or call us and we will
+            answer it personally.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ CONTENT ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="faq-content-heading"
+      style="background: var(--color-bg);"
+    >
+      <div class="frame-narrow">
+
+        <!-- Category tabs -->
+        <div class="faq-tabs reveal"
+          role="group"
+          aria-label="FAQ categories">
+          <button class="faq-tab active"
+            data-faq-filter="all"
+            aria-pressed="true">
+            All Questions
+          </button>
+          <button class="faq-tab"
+            data-faq-filter="ordering"
+            aria-pressed="false">
+            Ordering
+          </button>
+          <button class="faq-tab"
+            data-faq-filter="products"
+            aria-pressed="false">
+            Products
+          </button>
+          <button class="faq-tab"
+            data-faq-filter="delivery"
+            aria-pressed="false">
+            Delivery
+          </button>
+          <button class="faq-tab"
+            data-faq-filter="payment"
+            aria-pressed="false">
+            Payment
+          </button>
+        </div>
+
+        <!-- ── ORDERING ── -->
+        <div
+          class="faq-group reveal"
+          data-faq-category="ordering"
+        >
+          <div class="faq-group-title">Ordering</div>
+
+          <div class="faq-item" data-faq-cat="ordering">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Is there a minimum order quantity?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                There is no strict minimum order quantity.
+                However, single-piece orders are not practical
+                because delivery costs make them uneconomical
+                for both sides. Bulk orders are preferred and
+                will get you better pricing. If you are unsure
+                about quantity, share your requirement and we
+                will advise what makes sense.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="ordering">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                How do I place an order?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                The easiest way is to WhatsApp or call us
+                directly. You can also use the
+                <a href="contact.html">contact form</a>
+                on this website. Share your requirement —
+                product name, quantity and any size or
+                material preference — and we will respond
+                with availability and pricing.
+                <ul>
+                  <li>
+                    WhatsApp:
+                    <a href="https://wa.me/919849426939"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      +91 98494 26939
+                    </a>
+                  </li>
+                  <li>
+                    Call:
+                    <a href="tel:+919849426939">
+                      +91 98494 26939
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html">
+                      Contact form on this website
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="ordering">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Can I get a sample before placing a bulk order?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Sample requests can be discussed directly.
+                Contact us with your requirement and we will
+                let you know what is possible. WhatsApp is
+                the fastest way to get a response on this.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="ordering">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Do you accept repeat or standing orders
+                from dealers?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Repeat orders from dealers are the
+                backbone of our business. Most of our
+                established clients in Andhra Pradesh and
+                Telangana order regularly. If you are a
+                dealer looking for a consistent supplier,
+                get in touch and we can discuss terms.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── PRODUCTS ── -->
+        <div
+          class="faq-group reveal"
+          data-faq-category="products"
+        >
+          <div class="faq-group-title">Products</div>
+
+          <div class="faq-item" data-faq-cat="products">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                What products do you manufacture vs supply?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                We manufacture the following in-house:
+                <ul>
+                  <li>Window Friction Stays (SS, Brass, P-Coated)</li>
+                  <li>Pivot Hinges (Stainless Steel)</li>
+                  <li>Window Stays (I-Shape, 4-Bar)</li>
+                  <li>Window Friction Hinges (Brass, Powder Coated)</li>
+                  <li>Brass Window Stays</li>
+                </ul>
+                We also supply hardware items on demand —
+                locks, aldrops, wire mesh, door stoppers
+                and more. If you need something specific,
+                ask us and we will let you know if we
+                can source it.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="products">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                What sizes and materials are available
+                for friction stays?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Our standard friction stay is 10 inches.
+                Available materials include:
+                <ul>
+                  <li>Stainless Steel SS 304</li>
+                  <li>Brass</li>
+                  <li>P-Coated Steel</li>
+                  <li>Powder Coated Steel</li>
+                </ul>
+                For specific size or material requirements
+                outside this range, contact us and we will
+                advise on what is possible.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="products">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Can you supply hardware items that are
+                not listed on your website?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Our supply range is not limited to
+                what is listed here. We supply hardware
+                on demand — if you have a specific
+                requirement, share it with us and we
+                will let you know if we can source it
+                and at what price.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="products">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Are your hinges suitable for uPVC and
+                aluminium windows?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Our window friction stays and friction
+                hinges are designed for use with uPVC and
+                aluminium window systems — which are the
+                most common window types in modern
+                residential and commercial construction
+                in India.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── DELIVERY ── -->
+        <div
+          class="faq-group reveal"
+          data-faq-category="delivery"
+        >
+          <div class="faq-group-title">Delivery</div>
+
+          <div class="faq-item" data-faq-cat="delivery">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Where do you deliver?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                We currently serve Andhra Pradesh and
+                Telangana most strongly — these are our
+                established markets with long-standing
+                dealer and contractor relationships.
+                We are open to pan-India orders and
+                international enquiries as well.
+                Contact us with your location and
+                requirement and we will advise on
+                delivery options.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="delivery">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                What is the typical delivery time?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Delivery time depends on your location, order size and
+                current stock availability. For orders
+                within Andhra Pradesh and Telangana,
+                delivery is generally faster. Contact us
+                with your requirement and we will give
+                you a realistic timeline upfront.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="delivery">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Do you ship outside India?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                We are open to international enquiries.
+                If you are outside India and need hinges
+                or hardware, contact us with your
+                requirement and location. We will discuss
+                what is possible including shipping
+                arrangements.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── PAYMENT ── -->
+        <div
+          class="faq-group reveal"
+          data-faq-category="payment"
+        >
+          <div class="faq-group-title">Payment &amp; GST</div>
+
+          <div class="faq-item" data-faq-cat="payment">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Are you GST registered?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Radhekrishna Enterprises is GST
+                registered since July 2017. GST invoices
+                are provided for all orders. This makes
+                it straightforward for corporate clients,
+                contractors and government-linked buyers
+                to process purchases through their
+                procurement systems.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="payment">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                What payment methods do you accept?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Payment terms and methods are discussed
+                directly when you place an order. Common
+                methods include bank transfer and UPI.
+                For established dealer relationships,
+                credit terms may be available. Contact
+                us to discuss what works for your
+                situation.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-faq-cat="payment">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+            >
+              <span class="faq-question-text">
+                Can I get a formal quotation or proforma
+                invoice before ordering?
+              </span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <line x1="8" y1="3" x2="8" y2="13"/>
+                  <line x1="3" y1="8" x2="13" y2="8"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Share your requirement — product,
+                quantity and any specifications — and
+                we can provide a quotation. Use the
+                <a href="contact.html">contact form</a>
+                or WhatsApp us directly for the
+                fastest response.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── STILL HAVE QUESTIONS ── -->
+        <div class="still-questions reveal">
+          <div>
+            <h3>Still have a question?</h3>
+            <p>
+              If your question is not answered here,
+              WhatsApp or call us directly. The owner
+              handles enquiries personally so you will
+              get a direct, honest answer.
+            </p>
+          </div>
+          <div class="still-questions-actions">
+            <a
+              href="https://wa.me/919849426939?text=Hello%2C%20I%20have%20a%20question%20about%20your%20products."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor"
+                style="width:1rem;height:1rem;">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              WhatsApp Us
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              Contact Form
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="frame">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+                  fill="rgba(255,255,255,0.9)" />
+                <circle cx="12" cy="8" r="2"
+                  fill="rgba(255,255,255,0.5)" />
+                <path
+                  d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+                  fill="rgba(255,255,255,0.7)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-main">
+                Radhekrishna Enterprises
+              </span>
+              <span class="brand-sub">
+                Hinges &amp; Hardware · Since 1993
+              </span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Manufacturer of pivot hinges, stay hinges and
+            friction stays. Hardware supplier to dealers,
+            contractors and construction companies across
+            India. Based in Hyderabad since 1993.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">Pages</p>
+          <nav class="footer-links"
+            aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Products</p>
+          <nav class="footer-links"
+            aria-label="Product links">
+            <a href="products.html#friction-stays">
+              Window Friction Stays
+            </a>
+            <a href="products.html#pivot-hinges">
+              Pivot Hinges
+            </a>
+            <a href="products.html#window-stays">
+              Window Stays
+            </a>
+            <a href="products.html#friction-hinges">
+              Friction Hinges
+            </a>
+            <a href="products.html#brass-stays">
+              Brass Window Stays
+            </a>
+            <a href="products.html#supply">
+              Hardware Supply
+            </a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-links">
+            <a href="tel:+919849426939">
+              +91 98494 26939
+            </a>
+            <a href="mailto:gattupallibadari@gmail.com">
+              gattupallibadari@gmail.com
+            </a>
+            <a
+              href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fatehnagar, Balanagar,<br />
+              Hyderabad – 500018
+            </a>
+            <a
+              href="https://wa.me/919849426939"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp →
+            </a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <p class="footer-col-title">Hours</p>
+            <p style="font-size: var(--text-xs);
+                      color: var(--color-text-faint);
+                      line-height: 1.8;">
+              Tue – Sun: 9:00 AM – 5:30 PM<br />
+              Monday: Closed<br />
+              State &amp; National Holidays: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © <span id="footer-year">2025</span>
+          Radhekrishna Enterprises. All rights reserved.
+          Sole Proprietor: B. Gattupalli.
+        </p>
+        <div style="display:flex; gap: var(--space-5);
+                    flex-wrap:wrap; align-items:center;">
+          <span>GST Registered · Hyderabad</span>
+          <span>Member: Laghu Udyog Bharti</span>
+          <span>Member: AIAVIF</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="WhatsApp us"
+  >
+    <span class="whatsapp-float-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor"
+      aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      /* Footer year */
+      var el = document.getElementById('footer-year');
+      if (el) el.textContent = new Date().getFullYear();
+
+      /* ── FAQ Accordion ── */
+      var faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(function (item) {
+        var btn    = item.querySelector('.faq-question');
+        var answer = item.querySelector('.faq-answer');
+        if (!btn || !answer) return;
+
+        btn.addEventListener('click', function () {
+          var isOpen = item.classList.contains('open');
+
+          /* Close all others */
+          faqItems.forEach(function (other) {
+            other.classList.remove('open');
+            var otherBtn = other.querySelector('.faq-question');
+            if (otherBtn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          /* Toggle current */
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      /* ── FAQ Category Filter ── */
+      var faqTabs = document.querySelectorAll('.faq-tab');
+
+      faqTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          faqTabs.forEach(function (t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-pressed', 'false');
+          });
+          tab.classList.add('active');
+          tab.setAttribute('aria-pressed', 'true');
+
+          var filter = tab.getAttribute('data-faq-filter');
+          var groups = document.querySelectorAll(
+            '[data-faq-category]'
+          );
+          var items  = document.querySelectorAll(
+            '[data-faq-cat]'
+          );
+
+          if (filter === 'all') {
+            groups.forEach(function (g) {
+              g.style.display = '';
+            });
+            items.forEach(function (i) {
+              i.style.display = '';
+            });
+          } else {
+            groups.forEach(function (g) {
+              g.style.display =
+                g.getAttribute('data-faq-category') === filter
+                  ? '' : 'none';
+            });
+            items.forEach(function (i) {
+              i.style.display =
+                i.getAttribute('data-faq-cat') === filter
+                  ? '' : 'none';
+            });
+          }
+        });
+      });
+
+    }());
+  </script>
+
+</body>
+</html>
