@@ -1,318 +1,2004 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products & Supply | Radhekrishna Enterprises</title>
-  <meta name="description" content="Overview of G-MEX friction hinges and hardware supply range from Radhekrishna Enterprises, a small-scale industry active since 1993." />
+  <title>Products | Radhekrishna Enterprises — Hinges & Hardware Manufacturer Hyderabad</title>
+  <meta name="description" content="Browse pivot hinges, stay hinges, window friction stays, brass window stays and hardware supply from Radhekrishna Enterprises — manufacturer in Hyderabad since 1993." />
+  <meta name="keywords" content="pivot hinges manufacturer Hyderabad, window friction stay supplier India, brass window stays, stay hinges Telangana, hardware supplier on demand" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Products & Supply | Radhekrishna Enterprises" />
-  <meta property="og:description" content="Learn about G-MEX friction hinges and related hardware supply from Radhekrishna Enterprises." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Products | Radhekrishna Enterprises" />
+  <meta property="og:description" content="Pivot hinges, stay hinges, friction stays and hardware supply from Radhekrishna Enterprises, Hyderabad." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="[Add website or Vercel URL here]/products.html" />
-  <meta property="og:image" content="[Add social preview image URL here]" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:url" content="https://madhuvss-g.github.io/radhekrishna/products.html" />
+  <meta name="theme-color" content="#0a5c7a" />
 
+  <!-- Schema: Product list -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Radhekrishna Enterprises Products",
+    "description": "Hinges and hardware manufactured and supplied by Radhekrishna Enterprises",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Window Friction Stays",
+        "description": "10-inch friction stays in SS 304, brass and P-coated finishes"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pivot Hinges",
+        "description": "Stainless steel pivot hinges, 2 inch, 2.1-2.5mm thickness"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Window Stays",
+        "description": "I-shape and 4-bar window stays in brass and stainless steel"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Window Friction Hinges",
+        "description": "Brass and powder coated friction hinges for windows"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Brass Window Stays",
+        "description": "Premium brass window stays with polished finish"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('rke-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    }());
+  </script>
 
   <style>
-    /* Same base design system as index.html */
-    :root {
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1rem;
-      --text-lg: 1.125rem;
-      --text-xl: 1.5rem;
-      --text-2xl: 2rem;
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --radius-sm: 0.4rem;
-      --radius-md: 0.75rem;
-      --radius-lg: 1rem;
-      --color-bg: #f5f5f7;
-      --color-surface: #ffffff;
-      --color-surface-soft: #f9fafb;
-      --color-border: #e5e7eb;
-      --color-divider: #e5e5e5;
-      --color-text: #111827;
-      --color-text-muted: #4b5563;
-      --color-text-faint: #9ca3af;
-      --color-primary: #0f766e;
-      --color-primary-soft: #ecfdf5;
-      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
-      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
-      --content-width: 1120px;
+    /* ── Products page specific styles ── */
+
+    /* Page Hero */
+    .page-hero {
+      position: relative;
+      padding-block: var(--space-16) var(--space-12);
+      overflow: hidden;
+      border-bottom: 1px solid var(--color-border);
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; text-size-adjust: none; scroll-padding-top: 4.5rem; }
-    body {
-      min-height: 100vh;
-      font-family: "General Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-hero);
+      pointer-events: none;
+    }
+
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--color-border-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-border-soft) 1px, transparent 1px);
+      background-size: 52px 52px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-hero h1 {
+      max-width: 22ch;
+      margin-bottom: var(--space-4);
+    }
+
+    .page-hero h1 em {
+      font-style: normal;
+      background: var(--gradient-peacock);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      line-height: 1.75;
+      margin-bottom: var(--space-6);
+    }
+
+    /* Filter tabs */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-10);
+    }
+
+    .filter-btn {
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--color-border);
+      background: var(--color-surface);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition),
+                  border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background: var(--color-primary-soft);
+    }
+
+    .filter-btn.active {
+      background: var(--gradient-peacock);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 12px var(--color-primary-glow);
+    }
+
+    /* Product section anchor offset */
+    .product-section {
+      scroll-margin-top: calc(var(--nav-height) + var(--space-4));
+    }
+
+    /* Product detail card */
+    .product-detail-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-2xl);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .product-detail-grid {
+      display: grid;
+    }
+
+    .product-image-area {
+      background: var(--color-surface-soft);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 16rem;
+      position: relative;
+      overflow: hidden;
+      transition: background var(--transition-slow);
+    }
+
+    .product-image-area img {
+      max-height: 14rem;
+      width: auto;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+    }
+
+    /* SVG illustration placeholder */
+    .product-illustration {
+      width: 100%;
+      max-width: 18rem;
+      height: auto;
+    }
+
+    .product-manufacture-badge {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-manufactured {
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      border: 1px solid rgba(10, 92, 122, 0.2);
+    }
+
+    .badge-supplied {
+      background: var(--color-secondary-soft);
+      color: var(--color-secondary);
+      border: 1px solid rgba(13, 138, 110, 0.2);
+    }
+
+    .product-info-area {
+      padding: var(--space-6);
+    }
+
+    .product-info-area h2 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-3);
+    }
+
+    .product-info-area .product-desc {
       font-size: var(--text-base);
-      line-height: 1.6;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: var(--space-5);
+    }
+
+    /* Spec table */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--space-5);
+    }
+
+    .spec-table caption {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-faint);
+      text-align: left;
+      padding-bottom: var(--space-3);
+    }
+
+    .spec-table tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: background var(--transition);
+    }
+
+    .spec-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .spec-table tr:hover {
+      background: var(--color-primary-soft);
+    }
+
+    .spec-table td {
+      padding: var(--space-3) var(--space-2);
+      font-size: var(--text-sm);
+      vertical-align: middle;
+    }
+
+    .spec-table td:first-child {
+      color: var(--color-text-faint);
+      font-weight: 600;
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      width: 38%;
+    }
+
+    .spec-table td:last-child {
       color: var(--color-text);
-      background: radial-gradient(circle at top, #e5f3f2 0, #f5f5f7 48%, #f3f4f6 100%);
-    }
-    img, svg { display: block; max-width: 100%; height: auto; }
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; color: inherit; }
-    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
-
-    .skip-link { position: absolute; left: var(--space-4); top: -3rem; background: var(--color-primary); color:#fff; padding:var(--space-2)var(--space-4); border-radius:var(--radius-md); z-index:20;}
-    .skip-link:focus { top: var(--space-4); }
-
-    .frame { width: min(100% - 2.5rem, var(--content-width)); margin-inline: auto; }
-
-    header {
-      position: sticky; top: 0; z-index: 30;
-      backdrop-filter: blur(18px);
-      background: rgba(245,245,247,0.9);
-      border-bottom: 1px solid rgba(229,231,235,0.8);
-    }
-    .nav { display:flex; align-items:center; justify-content:space-between; min-height:4rem; gap:var(--space-4); }
-    .brand { display:inline-flex; align-items:center; gap:var(--space-3); padding-block:var(--space-2); }
-    .brand-mark {
-      width:2.4rem; height:2.4rem; border-radius:0.7rem; border:1px solid var(--color-border);
-      background:#fff; display:flex; align-items:center; justify-content:center;
-      box-shadow:0 6px 18px rgba(15,23,42,0.06);
-    }
-    .brand-main {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-sm); font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
-    }
-    .brand-sub { font-size:var(--text-xs); color:var(--color-text-faint); }
-    .nav-links { display:flex; list-style:none; gap:var(--space-4); font-size:var(--text-sm); }
-    .nav-links a {
-      padding-block:var(--space-2);
-      color:var(--color-text-muted);
-      border-bottom:2px solid transparent;
-      transition:color var(--transition), border-color var(--transition);
-    }
-    .nav-links a:hover,
-    .nav-links a:focus-visible { color:var(--color-primary); border-color:var(--color-primary); }
-
-    main section { padding-block: var(--space-10); }
-
-    .hero { padding-block: var(--space-12); }
-    .hero-grid { display:grid; gap:var(--space-8); align-items:center; }
-    .hero-eyebrow {
-      font-size:var(--text-xs); text-transform:uppercase; letter-spacing:0.14em;
-      color:var(--color-text-faint); margin-bottom:var(--space-2);
-    }
-    h1 {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-2xl); line-height:1.1; letter-spacing:-0.04em;
-      max-width:18ch; margin-bottom:var(--space-3);
-    }
-    .hero-lead {
-      font-size:var(--text-lg); color:var(--color-text-muted);
-      max-width:40ch; margin-bottom:var(--space-4);
-    }
-    .hero-body { color:var(--color-text-muted); max-width:50ch; }
-
-    .hero-visual {
-      border-radius:1.25rem; background:var(--color-surface);
-      border:1px solid var(--color-border);
-      padding:var(--space-6); box-shadow:var(--shadow-soft);
-    }
-    .hero-placeholder-box {
-      border-radius:var(--radius-md); border:1px dashed var(--color-border);
-      padding:var(--space-4); background:var(--color-surface-soft);
-      font-size:var(--text-xs); color:var(--color-text-faint);
+      font-weight: 500;
     }
 
-    .section-heading { margin-bottom:var(--space-5); }
-    .section-heading h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
-    .section-heading p { color:var(--color-text-muted); max-width:48ch; }
-
-    .card-grid { display:grid; gap:var(--space-4); }
-    .card {
-      background:var(--color-surface); border-radius:var(--radius-md); border:1px solid var(--color-border);
-      padding:var(--space-5); box-shadow:var(--shadow-card);
-      transition:border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    /* Tag row */
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
     }
-    .card:hover { border-color:var(--color-primary); box-shadow:0 16px 40px rgba(15,23,42,0.08); transform:translateY(-2px); }
-    .card h3 { font-size:var(--text-lg); margin-bottom:var(--space-3); }
-    .card p { font-size:var(--text-sm); color:var(--color-text-muted); margin-bottom:var(--space-2); }
-    .card ul { list-style:none; padding-left:0; }
-    .card li { font-size:var(--text-sm); color:var(--color-text-muted); padding-block:0.25rem; }
 
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity 420ms var(--transition), transform 420ms var(--transition); }
-    .reveal--visible { opacity:1; transform:translateY(0); }
-
-    footer {
-      border-top:1px solid var(--color-divider); padding-block:var(--space-6);
-      background:#f9fafb; font-size:var(--text-sm); color:var(--color-text-faint);
+    /* Applications list */
+    .applications-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
     }
-    .footer-row { display:flex; flex-direction:column; gap:var(--space-2); }
 
-    @media (min-width:768px) {
-      .hero-grid { grid-template-columns:minmax(0,1.35fr) minmax(280px,1fr); }
-      .card-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .footer-row { flex-direction:row; justify-content:space-between; align-items:center; }
+    .application-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
     }
-    @media (max-width:767px) {
-      .nav { flex-direction:column; align-items:flex-start; padding-block:var(--space-2); }
-      .nav-links { width:100%; justify-content:flex-start; overflow-x:auto; }
+
+    .application-item::before {
+      content: '';
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background: var(--gradient-peacock);
+      flex-shrink: 0;
+    }
+
+    /* Product card actions */
+    .product-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      padding-top: var(--space-5);
+      border-top: 1px solid var(--color-border);
+    }
+
+    /* Supply section */
+    .supply-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .supply-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      padding: var(--space-4) var(--space-5);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  transform var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .supply-item:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .supply-item-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: var(--radius-md);
+      background: var(--color-secondary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background var(--transition);
+    }
+
+    .supply-item:hover .supply-item-icon {
+      background: var(--gradient-peacock);
+    }
+
+    .supply-item-icon svg {
+      width: 1.1rem;
+      height: 1.1rem;
+      color: var(--color-secondary);
+      transition: color var(--transition);
+    }
+
+    .supply-item:hover .supply-item-icon svg {
+      color: #fff;
+    }
+
+    .supply-item-text h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.15rem;
+    }
+
+    .supply-item-text p {
+      font-size: var(--text-xs);
+      color: var(--color-text-faint);
+      line-height: 1.5;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .product-detail-grid {
+        grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+      }
+
+      .product-image-area {
+        border-bottom: none;
+        border-right: 1px solid var(--color-border);
+        min-height: 24rem;
+      }
+
+      .supply-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .supply-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
 
-  <header>
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" role="banner">
     <div class="frame nav">
-      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
+
+      <a href="index.html" class="brand"
+        aria-label="Radhekrishna Enterprises — home">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+              fill="rgba(255,255,255,0.9)" />
+            <circle cx="12" cy="8" r="2"
+              fill="rgba(255,255,255,0.5)" />
+            <path
+              d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              fill="rgba(255,255,255,0.7)" />
           </svg>
         </span>
-        <span>
-          <div class="brand-main">Radhekrishna Enterprises</div>
-          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
+        <span class="brand-text">
+          <span class="brand-main">Radhekrishna Enterprises</span>
+          <span class="brand-sub">Hinges &amp; Hardware · Since 1993</span>
         </span>
       </a>
+
       <nav aria-label="Primary navigation">
-        <ul class="nav-links">
+        <ul class="nav-links" role="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
           <li><a href="clients.html">Clients</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="nav-cta">
+          Get Quote
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
+  <!-- Mobile Menu -->
+  <nav
+    id="mobile-menu"
+    class="mobile-menu"
+    aria-label="Mobile navigation"
+  >
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html" aria-current="page">Products</a>
+    <a href="clients.html">Clients</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-menu-cta">Get a Quote →</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
   <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="frame hero-grid">
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="products-heading">
+      <div class="page-hero-bg"   aria-hidden="true"></div>
+      <div class="page-hero-grid" aria-hidden="true"></div>
+
+      <div class="frame page-hero-inner">
         <div class="reveal">
-          <p class="hero-eyebrow">Products & Supply</p>
-          <h1>G-MEX friction hinges, plus the hardware that sits around them.</h1>
-          <p class="hero-lead">
-            The core product is G-MEX friction hinges manufactured by Radhekrishna Enterprises. Around that, the company also supplies hardware materials that are not limited to metals.
+          <span class="eyebrow">Products &amp; Supply</span>
+          <h1 id="products-heading">
+            Manufactured in Hyderabad.<br />
+            <em>Supplied across India.</em>
+          </h1>
+          <p class="page-hero-lead">
+            We manufacture pivot hinges, stay hinges and friction stays
+            in-house. We also supply a wide range of hardware items —
+            locks, aldrops, wire mesh and more — on demand. No minimum
+            order quantity, bulk orders preferred.
           </p>
-          <p class="hero-body">
-            This page is designed to give buyers a clear view of what is available today, and where they can ask for more detail or share their specific hinge and hardware requirements.
-          </p>
-        </div>
 
-        <aside class="hero-visual reveal" aria-label="Placeholder for product imagery or layout">
-          <div class="hero-placeholder-box">
-            <strong>Product image layout (optional)</strong><br />
-            Here you can later place a simple photo or layout showing G-MEX friction hinges and related hardware items together.<br /><br />
-            [Add product photo / simple flat-lay image here in the future]
+          <!-- Filter bar -->
+          <div
+            class="filter-bar"
+            role="group"
+            aria-label="Filter products by category"
+          >
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All Products
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="manufactured"
+              aria-pressed="false"
+            >
+              We Manufacture
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="supplied"
+              aria-pressed="false"
+            >
+              We Supply
+            </button>
           </div>
-        </aside>
-      </div>
-    </section>
 
-    <!-- CATEGORIES -->
-    <section>
-      <div class="frame">
-        <div class="section-heading reveal">
-          <h2>What Radhekrishna Enterprises currently offers</h2>
-          <p>
-            This is intentionally kept simple and factual. If you expand the range in the future, you can add more sections or details here.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card reveal">
-            <h3>G-MEX friction hinges</h3>
-            <p>
-              Radhekrishna Enterprises is the sole manufacturer of G-MEX friction hinges. That means clients are working directly with the manufacturer, not just a trader.
-            </p>
-            <ul>
-              <li>• [Add list of available hinge sizes here]</li>
-              <li>• [Add list of variants or models here]</li>
-              <li>• [Add brief technical points that are safe to share publicly]</li>
-            </ul>
-          </article>
-
-          <article class="card reveal">
-            <h3>Hinges manufacturing & supplying</h3>
-            <p>
-              Beyond the G-MEX name, the company’s work still comes back to hinges: manufacturing and supplying them to match client needs.
-            </p>
-            <ul>
-              <li>• [Add hinge types or application areas you support]</li>
-              <li>• [Add note about small, medium, or large quantity support]</li>
-            </ul>
-          </article>
-
-          <article class="card reveal">
-            <h3>Hardware supply beyond metals</h3>
-            <p>
-              The supply scope is not limited to metals. Radhekrishna Enterprises can also supply several hardware materials like plastic and other items connected to the project.
-            </p>
-            <ul>
-              <li>• Plastic hardware items [Add examples when ready]</li>
-              <li>• Metal hardware items [Add examples when ready]</li>
-              <li>• [Add any other material categories you frequently supply]</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- HOW TO REQUEST DETAILS -->
-    <section>
+    <!-- ============================================================
+         MANUFACTURED PRODUCTS
+    ============================================================ -->
+    <section
+      class="section-pad"
+      aria-labelledby="manufactured-heading"
+      style="background: var(--color-bg);"
+      data-category="manufactured"
+    >
       <div class="frame">
-        <article class="card reveal">
-          <h3>How to request exact specs</h3>
+
+        <div class="section-header reveal">
+          <span class="eyebrow">We manufacture</span>
+          <h2 id="manufactured-heading">
+            Made in our facility<br />
+            in Hyderabad.
+          </h2>
           <p>
-            Many buyers prefer to share a simple requirement list instead of browsing long tables. This site follows that approach.
+            These products are manufactured by Radhekrishna Enterprises.
+            You are buying directly from the maker — no middlemen,
+            better pricing, consistent quality.
           </p>
-          <p>
-            You can send a requirement that includes items like hinge type, approximate quantity, and any basic size or material preferences. The team can then respond with what fits from the G-MEX and hardware supply range.
-          </p>
-          <p>
-            Use the contact page to send that requirement in your own words:
-          </p>
-          <p>
-            <a href="contact.html" style="color: var(--color-primary);">Go to the contact form →</a>
-          </p>
-        </article>
+        </div>
+
+        <!-- ── PRODUCT 1: Window Friction Stays ── -->
+        <div
+          id="friction-stays"
+          class="product-detail-card product-section reveal"
+          style="margin-bottom: var(--space-8);"
+          data-product="manufactured"
+        >
+          <div class="product-detail-grid">
+
+            <div class="product-image-area">
+              <span class="product-manufacture-badge badge-manufactured">
+                ✦ We Manufacture
+              </span>
+
+              <!-- SVG illustration -->
+              <svg
+                class="product-illustration"
+                viewBox="0 0 320 220"
+                fill="none"
+                aria-label="Window friction stay illustration"
+              >
+                <defs>
+                  <pattern id="grid1" width="20" height="20"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="var(--color-border)"
+                      stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="220" fill="url(#grid1)"/>
+
+                <!-- Friction stay body -->
+                <rect x="60" y="80" width="200" height="28"
+                  rx="4"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- Arm left -->
+                <rect x="40" y="86" width="36" height="16"
+                  rx="3"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="1.5"/>
+
+                <!-- Arm right -->
+                <rect x="244" y="86" width="36" height="16"
+                  rx="3"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="1.5"/>
+
+                <!-- Pivot circles -->
+                <circle cx="58" cy="94" r="7"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+                <circle cx="58" cy="94" r="2.5"
+                  fill="var(--color-primary)"/>
+
+                <circle cx="262" cy="94" r="7"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+                <circle cx="262" cy="94" r="2.5"
+                  fill="var(--color-primary)"/>
+
+                <!-- Mounting holes -->
+                <circle cx="110" cy="94" r="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="160" cy="94" r="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="210" cy="94" r="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Dimension line -->
+                <line x1="60" y1="130" x2="260" y2="130"
+                  stroke="var(--color-primary)"
+                  stroke-width="1"
+                  stroke-dasharray="4 3"/>
+                <line x1="60" y1="125" x2="60" y2="135"
+                  stroke="var(--color-primary)" stroke-width="1"/>
+                <line x1="260" y1="125" x2="260" y2="135"
+                  stroke="var(--color-primary)" stroke-width="1"/>
+
+                <!-- Labels -->
+                <text x="160" y="148"
+                  text-anchor="middle"
+                  fill="var(--color-text-faint)"
+                  font-size="11"
+                  font-family="system-ui">
+                  10 INCH STANDARD
+                </text>
+                <text x="160" y="168"
+                  text-anchor="middle"
+                  fill="var(--color-primary)"
+                  font-size="13"
+                  font-weight="600"
+                  font-family="system-ui">
+                  WINDOW FRICTION STAY
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="product-info-area">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-3);">
+                Friction Stays
+              </span>
+              <h2>Window Friction Stays</h2>
+              <p class="product-desc">
+                Our 10-inch window friction stays are designed for
+                uPVC and aluminium window systems. They hold the
+                window open at any angle and are built for smooth,
+                consistent operation over years of use. Available
+                in stainless steel, brass and P-coated finishes.
+              </p>
+
+              <table class="spec-table"
+                aria-label="Window friction stay specifications">
+                <caption>Specifications</caption>
+                <tbody>
+                  <tr>
+                    <td>Standard Size</td>
+                    <td>10 Inch</td>
+                  </tr>
+                  <tr>
+                    <td>Materials</td>
+                    <td>SS 304, Brass, P-Coated Steel</td>
+                  </tr>
+                  <tr>
+                    <td>Finish</td>
+                    <td>Powder Coated, Polished, Silver</td>
+                  </tr>
+                  <tr>
+                    <td>Application</td>
+                    <td>uPVC &amp; Aluminium Windows</td>
+                  </tr>
+                  <tr>
+                    <td>Type</td>
+                    <td>Spring Hinge / Friction Stay</td>
+                  </tr>
+                  <tr>
+                    <td>Supply Type</td>
+                    <td>Manufactured in-house</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="tag-row">
+                <span class="badge badge-primary">SS 304</span>
+                <span class="badge badge-primary">Brass</span>
+                <span class="badge badge-primary">P-Coated</span>
+                <span class="badge badge-primary">10 Inch</span>
+                <span class="badge badge-primary">Powder Coated</span>
+              </div>
+
+              <div class="applications-list"
+                aria-label="Applications">
+                <div class="application-item">
+                  uPVC casement windows
+                </div>
+                <div class="application-item">
+                  Aluminium window systems
+                </div>
+                <div class="application-item">
+                  Residential apartments and housing projects
+                </div>
+                <div class="application-item">
+                  Commercial buildings and offices
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20am%20interested%20in%20Window%20Friction%20Stays.%20Please%20share%20pricing%20and%20availability."
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor"
+                    style="width:1rem;height:1rem;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp Enquiry
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                  Send Requirement
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PRODUCT 2: Pivot Hinges ── -->
+        <div
+          id="pivot-hinges"
+          class="product-detail-card product-section reveal"
+          style="margin-bottom: var(--space-8);"
+          data-product="manufactured"
+        >
+          <div class="product-detail-grid">
+
+            <div class="product-image-area">
+              <span class="product-manufacture-badge badge-manufactured">
+                ✦ We Manufacture
+              </span>
+
+              <svg
+                class="product-illustration"
+                viewBox="0 0 320 220"
+                fill="none"
+                aria-label="Pivot hinge illustration"
+              >
+                <defs>
+                  <pattern id="grid2" width="20" height="20"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="var(--color-border)"
+                      stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="220" fill="url(#grid2)"/>
+
+                <!-- Pivot hinge body top -->
+                <rect x="110" y="50" width="100" height="50"
+                  rx="4"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- Pivot hinge body bottom -->
+                <rect x="110" y="120" width="100" height="50"
+                  rx="4"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- Center pivot -->
+                <circle cx="160" cy="110" r="14"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2.5"/>
+                <circle cx="160" cy="110" r="5"
+                  fill="var(--color-primary)"/>
+
+                <!-- Mounting holes top -->
+                <circle cx="135" cy="65" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="185" cy="65" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="135" cy="90" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="185" cy="90" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Mounting holes bottom -->
+                <circle cx="135" cy="135" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="185" cy="135" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="135" cy="160" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="185" cy="160" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Label -->
+                <text x="160" y="195"
+                  text-anchor="middle"
+                  fill="var(--color-primary)"
+                  font-size="13"
+                  font-weight="600"
+                  font-family="system-ui">
+                  PIVOT HINGE · SS 304
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="product-info-area">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-3);">
+                Pivot Hinges
+              </span>
+              <h2>Stainless Steel Pivot Hinges</h2>
+              <p class="product-desc">
+                Our stainless steel pivot hinges are manufactured
+                for doors, windows and heavy panel applications.
+                Available in 2-inch size with 2.1–2.5 mm thickness,
+                they offer smooth rotation and long-term durability
+                in both residential and commercial settings.
+              </p>
+
+              <table class="spec-table"
+                aria-label="Pivot hinge specifications">
+                <caption>Specifications</caption>
+                <tbody>
+                  <tr>
+                    <td>Size</td>
+                    <td>2 Inch</td>
+                  </tr>
+                  <tr>
+                    <td>Material</td>
+                    <td>Stainless Steel SS 202 / SS 304</td>
+                  </tr>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>2.1 – 2.5 mm</td>
+                  </tr>
+                  <tr>
+                    <td>Finish</td>
+                    <td>Silver / Polished</td>
+                  </tr>
+                  <tr>
+                    <td>Application</td>
+                    <td>Doors, Windows, Heavy Panels</td>
+                  </tr>
+                  <tr>
+                    <td>Supply Type</td>
+                    <td>Manufactured in-house</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="tag-row">
+                <span class="badge badge-primary">SS 202</span>
+                <span class="badge badge-primary">SS 304</span>
+                <span class="badge badge-primary">2 Inch</span>
+                <span class="badge badge-primary">2.1–2.5 mm</span>
+              </div>
+
+              <div class="applications-list"
+                aria-label="Applications">
+                <div class="application-item">
+                  Residential and commercial doors
+                </div>
+                <div class="application-item">
+                  uPVC and aluminium window frames
+                </div>
+                <div class="application-item">
+                  Heavy panel installations
+                </div>
+                <div class="application-item">
+                  High-traffic entry points
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20am%20interested%20in%20Pivot%20Hinges.%20Please%20share%20pricing%20and%20availability."
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor"
+                    style="width:1rem;height:1rem;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp Enquiry
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                  Send Requirement
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PRODUCT 3: Window Stays ── -->
+        <div
+          id="window-stays"
+          class="product-detail-card product-section reveal"
+          style="margin-bottom: var(--space-8);"
+          data-product="manufactured"
+        >
+          <div class="product-detail-grid">
+
+            <div class="product-image-area">
+              <span class="product-manufacture-badge badge-manufactured">
+                ✦ We Manufacture
+              </span>
+
+              <svg
+                class="product-illustration"
+                viewBox="0 0 320 220"
+                fill="none"
+                aria-label="Window stay illustration"
+              >
+                <defs>
+                  <pattern id="grid3" width="20" height="20"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="var(--color-border)"
+                      stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="220" fill="url(#grid3)"/>
+
+                <!-- I-Shape stay bar -->
+                <rect x="70" y="88" width="180" height="18"
+                  rx="3"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- End caps -->
+                <rect x="58" y="82" width="22" height="30"
+                  rx="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="1.5"/>
+                <rect x="240" y="82" width="22" height="30"
+                  rx="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="1.5"/>
+
+                <!-- Screw holes on end caps -->
+                <circle cx="69" cy="97" r="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="251" cy="97" r="4"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Center detail -->
+                <circle cx="160" cy="97" r="6"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="1.5"/>
+
+                <!-- Label -->
+                <text x="160" y="148"
+                  text-anchor="middle"
+                  fill="var(--color-text-faint)"
+                  font-size="11"
+                  font-family="system-ui">
+                  I-SHAPE WINDOW STAY
+                </text>
+                <text x="160" y="168"
+                  text-anchor="middle"
+                  fill="var(--color-primary)"
+                  font-size="13"
+                  font-weight="600"
+                  font-family="system-ui">
+                  BRASS / STAINLESS STEEL
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="product-info-area">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-3);">
+                Window Stays
+              </span>
+              <h2>Window Stays</h2>
+              <p class="product-desc">
+                Available in I-shape and 4-bar configurations,
+                our window stays keep windows open at a fixed
+                angle securely. Manufactured in brass and
+                stainless steel, suitable for both traditional
+                and modern window designs.
+              </p>
+
+              <table class="spec-table"
+                aria-label="Window stay specifications">
+                <caption>Specifications</caption>
+                <tbody>
+                  <tr>
+                    <td>Types</td>
+                    <td>I-Shape, 4-Bar</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Size</td>
+                    <td>10 Inch</td>
+                  </tr>
+                  <tr>
+                    <td>Materials</td>
+                    <td>Brass, Stainless Steel</td>
+                  </tr>
+                  <tr>
+                    <td>Finish</td>
+                    <td>Polished, Brown, Silver</td>
+                  </tr>
+                  <tr>
+                    <td>Application</td>
+                    <td>Casement &amp; Awning Windows</td>
+                  </tr>
+                  <tr>
+                    <td>Supply Type</td>
+                    <td>Manufactured in-house</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="tag-row">
+                <span class="badge badge-primary">I-Shape</span>
+                <span class="badge badge-primary">4-Bar</span>
+                <span class="badge badge-accent">Brass</span>
+                <span class="badge badge-primary">10 Inch</span>
+                <span class="badge badge-primary">Brown Finish</span>
+              </div>
+
+              <div class="applications-list"
+                aria-label="Applications">
+                <div class="application-item">
+                  Casement and awning windows
+                </div>
+                <div class="application-item">
+                  Residential and commercial buildings
+                </div>
+                <div class="application-item">
+                  Heritage and premium architectural projects
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20am%20interested%20in%20Window%20Stays.%20Please%20share%20pricing%20and%20availability."
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor"
+                    style="width:1rem;height:1rem;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp Enquiry
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                  Send Requirement
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PRODUCT 4: Window Friction Hinges ── -->
+        <div
+          id="friction-hinges"
+          class="product-detail-card product-section reveal"
+          style="margin-bottom: var(--space-8);"
+          data-product="manufactured"
+        >
+          <div class="product-detail-grid">
+
+            <div class="product-image-area">
+              <span class="product-manufacture-badge badge-manufactured">
+                ✦ We Manufacture
+              </span>
+
+              <svg
+                class="product-illustration"
+                viewBox="0 0 320 220"
+                fill="none"
+                aria-label="Window friction hinge illustration"
+              >
+                <defs>
+                  <pattern id="grid4" width="20" height="20"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="var(--color-border)"
+                      stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="220" fill="url(#grid4)"/>
+
+                <!-- Left plate -->
+                <rect x="60" y="55" width="80" height="110"
+                  rx="4"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- Right plate -->
+                <rect x="180" y="55" width="80" height="110"
+                  rx="4"
+                  fill="var(--color-surface-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+
+                <!-- Hinge pin -->
+                <rect x="136" y="70" width="48" height="80"
+                  rx="6"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+                <circle cx="160" cy="110" r="10"
+                  fill="var(--color-primary-soft)"
+                  stroke="var(--color-primary)"
+                  stroke-width="2"/>
+                <circle cx="160" cy="110" r="4"
+                  fill="var(--color-primary)"/>
+
+                <!-- Screw holes left -->
+                <circle cx="85" cy="80" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="115" cy="80" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="85" cy="140" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="115" cy="140" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Screw holes right -->
+                <circle cx="205" cy="80" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="235" cy="80" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="205" cy="140" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+                <circle cx="235" cy="140" r="5"
+                  fill="var(--color-surface)"
+                  stroke="var(--color-border)"
+                  stroke-width="1.5"/>
+
+                <!-- Label -->
+                <text x="160" y="190"
+                  text-anchor="middle"
+                  fill="var(--color-primary)"
+                  font-size="13"
+                  font-weight="600"
+                  font-family="system-ui">
+                  WINDOW FRICTION HINGE
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="product-info-area">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-3);">
+                Friction Hinges
+              </span>
+              <h2>Window Friction Hinges</h2>
+              <p class="product-desc">
+                Our window friction hinges provide smooth,
+                controlled opening and closing for windows.
+                Available in brass and powder-coated finishes,
+                they are built for consistent performance
+                across residential and commercial window
+                installations.
+              </p>
+
+              <table class="spec-table"
+                aria-label="Window friction hinge specifications">
+                <caption>Specifications</caption>
+                <tbody>
+                  <tr>
+                    <td>Materials</td>
+                    <td>Brass, Powder Coated Steel</td>
+                  </tr>
+                  <tr>
+                    <td>Finish</td>
+                    <td>Powder Coated, P-Coated, Polished</td>
+                  </tr>
+                  <tr>
+                    <td>Type</td>
+                    <td>Spring Hinge / Friction Hinge</td>
+                  </tr>
+                  <tr>
+                    <td>Application</td>
+                    <td>Residential &amp; Commercial Windows</td>
+                  </tr>
+                  <tr>
+                    <td>Supply Type</td>
+                    <td>Manufactured in-house</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="tag-row">
+                <span class="badge badge-accent">Brass</span>
+                <span class="badge badge-primary">Powder Coated</span>
+                <span class="badge badge-primary">P-Coated</span>
+                <span class="badge badge-primary">Spring Hinge</span>
+              </div>
+
+              <div class="applications-list"
+                aria-label="Applications">
+                <div class="application-item">
+                  Residential window installations
+                </div>
+                <div class="application-item">
+                  Commercial building windows
+                </div>
+                <div class="application-item">
+                  uPVC and aluminium frame systems
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20am%20interested%20in%20Window%20Friction%20Hinges.%20Please%20share%20pricing%20and%20availability."
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor"
+                    style="width:1rem;height:1rem;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp Enquiry
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                  Send Requirement
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PRODUCT 5: Brass Window Stays ── -->
+        <div
+          id="brass-stays"
+          class="product-detail-card product-section reveal"
+          data-product="manufactured"
+        >
+          <div class="product-detail-grid">
+
+            <div class="product-image-area">
+              <span class="product-manufacture-badge badge-manufactured">
+                ✦ We Manufacture
+              </span>
+
+              <svg
+                class="product-illustration"
+                viewBox="0 0 320 220"
+                fill="none"
+                aria-label="Brass window stay illustration"
+              >
+                <defs>
+                  <pattern id="grid5" width="20" height="20"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20"
+                      fill="none"
+                      stroke="var(--color-border)"
+                      stroke-width="0.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="220" fill="url(#grid5)"/>
+
+                <!-- Brass stay bar -->
+                <rect x="65" y="90" width="190" height="16"
+                  rx="3"
+                  fill="#fdf3e3"
+                  stroke="#b8860b"
+                  stroke-width="2"/>
+
+                <!-- End fittings -->
+                <rect x="50" y="82" width="26" height="32"
+                  rx="5"
+                  fill="#fdf3e3"
+                  stroke="#b8860b"
+                  stroke-width="1.5"/>
+                <rect x="244" y="82" width="26" height="32"
+                  rx="5"
+                  fill="#fdf3e3"
+                  stroke="#b8860b"
+                  stroke-width="1.5"/>
+
+                <!-- Screw holes -->
+                <circle cx="63" cy="98" r="4"
+                  fill="white"
+                  stroke="#b8860b"
+                  stroke-width="1.5"/>
+                <circle cx="257" cy="98" r="4"
+                  fill="white"
+                  stroke="#b8860b"
+                  stroke-width="1.5"/>
+
+                <!-- Decorative knurling lines -->
+                <line x1="120" y1="90" x2="120" y2="106"
+                  stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+                <line x1="140" y1="90" x2="140" y2="106"
+                  stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+                <line x1="160" y1="90" x2="160" y2="106"
+                  stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+                <line x1="180" y1="90" x2="180" y2="106"
+                  stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+                <line x1="200" y1="90" x2="200" y2="106"
+                  stroke="#b8860b" stroke-width="1" opacity="0.4"/>
+
+                <!-- Labels -->
+                <text x="160" y="148"
+                  text-anchor="middle"
+                  fill="var(--color-text-faint)"
+                  font-size="11"
+                  font-family="system-ui">
+                  PREMIUM BRASS FINISH
+                </text>
+                <text x="160" y="168"
+                  text-anchor="middle"
+                  fill="#b8860b"
+                  font-size="13"
+                  font-weight="600"
+                  font-family="system-ui">
+                  BRASS WINDOW STAY
+                </text>
+              </svg>
+
+            </div>
+
+            <div class="product-info-area">
+              <span class="eyebrow"
+                style="margin-bottom: var(--space-3);">
+                Brass Window Stays
+              </span>
+              <h2>Brass Window Stays</h2>
+              <p class="product-desc">
+                Premium brass window stays with a polished finish,
+                combining functionality with an elegant aesthetic.
+                Ideal for heritage properties, premium residential
+                projects and architectural applications where
+                appearance matters as much as performance.
+              </p>
+
+              <table class="spec-table"
+                aria-label="Brass window stay specifications">
+                <caption>Specifications</caption>
+                <tbody>
+                  <tr>
+                    <td>Material</td>
+                    <td>Premium Brass</td>
+                  </tr>
+                  <tr>
+                    <td>Finish</td>
+                    <td>Polished Brass</td>
+                  </tr>
+                  <tr>
+                    <td>Application</td>
+                    <td>Heritage, Premium Residential</td>
+                  </tr>
+                  <tr>
+                    <td>Aesthetic</td>
+                    <td>Warm Gold Tone</td>
+                  </tr>
+                  <tr>
+                    <td>Supply Type</td>
+                    <td>Manufactured in-house</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="tag-row">
+                <span class="badge badge-accent">Premium Brass</span>
+                <span class="badge badge-accent">Polished</span>
+                <span class="badge badge-accent">Gold Tone</span>
+              </div>
+
+              <div class="applications-list"
+                aria-label="Applications">
+                <div class="application-item">
+                  Heritage and period properties
+                </div>
+                <div class="application-item">
+                  Premium residential projects
+                </div>
+                <div class="application-item">
+                  Architectural and designer interiors
+                </div>
+              </div>
+
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919849426939?text=Hello%2C%20I%20am%20interested%20in%20Brass%20Window%20Stays.%20Please%20share%20pricing%20and%20availability."
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor"
+                    style="width:1rem;height:1rem;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  WhatsApp Enquiry
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                  Send Requirement
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
+    <!-- ============================================================
+         SUPPLY SECTION
+    ============================================================ -->
+    <section
+      id="supply"
+      class="section-pad product-section"
+      aria-labelledby="supply-heading"
+      style="background: var(--color-surface);
+             border-top: 1px solid var(--color-border);"
+      data-category="supplied"
+    >
+      <div class="frame">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">We supply</span>
+          <h2 id="supply-heading">
+            Hardware on demand.<br />
+            If you need it, we source it.
+          </h2>
+          <p>
+            Beyond what we manufacture, we supply a wide range of
+            hardware items. If you need something specific for your
+            project, send us the requirement and we will let you
+            know if we can source it.
+          </p>
+        </div>
+
+        <div class="supply-grid">
+
+          <div class="supply-item reveal delay-1">
+            <div class="supply-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11"
+                  rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Locks</h3>
+              <p>Door and window locks for residential and commercial use</p>
+            </div>
+          </div>
+
+          <div class="supply-item reveal delay-2">
+            <div class="supply-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 010 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Aldrops</h3>
+              <p>Tower bolts and aldrops for doors and gates</p>
+            </div>
+          </div>
+
+          <div class="supply-item reveal delay-3">
+            <div class="supply-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v18M15 3v18"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Wire Mesh</h3>
+              <p>Wire mesh for windows, doors and security applications</p>
+            </div>
+          </div>
+
+          <div class="supply-item reveal delay-1">
+            <div class="supply-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Door Stoppers</h3>
+              <p>Floor and wall mounted door stoppers</p>
+            </div>
+          </div>
+
+          <div class="supply-item reveal delay-2">
+            <div class="supply-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Other Hardware</h3>
+              <p>Screws, bolts, handles and general hardware items</p>
+            </div>
+          </div>
+
+          <div class="supply-item reveal delay-3"
+            style="background: var(--gradient-feather);
+                   border-color: var(--color-primary);">
+            <div class="supply-item-icon"
+              style="background: var(--color-primary-soft);"
+              aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
+            <div class="supply-item-text">
+              <h3>Don't see what you need?</h3>
+              <p>
+                Send us your requirement — we will let you know
+                if we can source it for you.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Supply CTA -->
+        <div style="margin-top: var(--space-8);
+                    padding: var(--space-6);
+                    border-radius: var(--radius-xl);
+                    border: 1px solid var(--color-border);
+                    background: var(--color-surface-soft);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--space-4);
+                    align-items: center;
+                    justify-content: space-between;"
+          class="reveal">
+          <div>
+            <h3 style="font-size: var(--text-lg);
+                       margin-bottom: var(--space-1);">
+              Need something specific?
+            </h3>
+            <p style="font-size: var(--text-sm);
+                      color: var(--color-text-muted);
+                      max-width: 48ch;">
+              Share your hardware requirement in plain language.
+              Product name, quantity, size or material — whatever
+              you know. We will respond with what we can do.
+            </p>
+          </div>
+          <div style="display:flex; flex-wrap:wrap;
+                      gap: var(--space-3); flex-shrink:0;">
+            <a
+              href="https://wa.me/919849426939?text=Hello%2C%20I%20have%20a%20hardware%20requirement%20I%20would%20like%20to%20discuss."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Requirement
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              Use Contact Form
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ── -->
+    <section
+      class="section-pad"
+      style="background: var(--color-bg);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+        <div class="cta-banner">
+          <div class="cta-banner-glow" aria-hidden="true"></div>
+          <div class="cta-banner-inner reveal">
+            <span class="eyebrow"
+              style="color: rgba(255,255,255,0.5);
+                     justify-content: center;
+                     margin-bottom: var(--space-4);">
+              Ready to order?
+            </span>
+            <h2 style="color:#fff; max-width:22ch;
+                       margin-inline:auto;
+                       margin-bottom: var(--space-4);">
+              Direct from manufacturer.<br />
+              Better pricing, faster response.
+            </h2>
+            <p style="color:rgba(255,255,255,0.6);
+                      max-width:44ch; margin-inline:auto;
+                      margin-bottom: var(--space-8);">
+              Share your requirement — hinge type, quantity,
+              size or material. We will respond with
+              availability and pricing directly.
+            </p>
+            <div class="cta-actions">
+              <a
+                href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+                class="btn btn-white btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  style="width:1.1rem;height:1.1rem;
+                         color:#25d366">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+              <a href="contact.html" class="btn btn-ghost-white btn-lg">
+                Contact Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <div class="frame footer-row">
-      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
-      <p>This page is a structured overview of what you already do today, with room to add more technical detail later.</p>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="frame">
+
+      <div class="footer-grid">
+
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+                  fill="rgba(255,255,255,0.9)" />
+                <circle cx="12" cy="8" r="2"
+                  fill="rgba(255,255,255,0.5)" />
+                <path
+                  d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+                  fill="rgba(255,255,255,0.7)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-main">Radhekrishna Enterprises</span>
+              <span class="brand-sub">
+                Hinges &amp; Hardware · Since 1993
+              </span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Manufacturer of pivot hinges, stay hinges and friction
+            stays. Hardware supplier to dealers, contractors and
+            construction companies across India.
+            Based in Hyderabad since 1993.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Pages</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Products</p>
+          <nav class="footer-links" aria-label="Product links">
+            <a href="products.html#friction-stays">
+              Window Friction Stays
+            </a>
+            <a href="products.html#pivot-hinges">
+              Pivot Hinges
+            </a>
+            <a href="products.html#window-stays">
+              Window Stays
+            </a>
+            <a href="products.html#friction-hinges">
+              Friction Hinges
+            </a>
+            <a href="products.html#brass-stays">
+              Brass Window Stays
+            </a>
+            <a href="products.html#supply">
+              Hardware Supply
+            </a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-links">
+            <a href="tel:+919849426939">
+              +91 98494 26939
+            </a>
+            <a href="mailto:gattupallibadari@gmail.com">
+              gattupallibadari@gmail.com
+            </a>
+            <a
+              href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fatehnagar, Balanagar,<br />
+              Hyderabad – 500018
+            </a>
+            <a
+              href="https://wa.me/919849426939"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp →
+            </a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <p class="footer-col-title">Hours</p>
+            <p style="font-size: var(--text-xs);
+                      color: var(--color-text-faint);
+                      line-height: 1.8;">
+              Tue – Sun: 9:00 AM – 5:30 PM<br />
+              Monday: Closed<br />
+              State &amp; National Holidays: Closed
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="footer-year">2025</span>
+          Radhekrishna Enterprises. All rights reserved.
+          Sole Proprietor: B. Gattupalli.
+        </p>
+        <div style="display:flex; gap: var(--space-5);
+                    flex-wrap: wrap; align-items: center;">
+          <span>GST Registered · Hyderabad</span>
+          <span>Member: Laghu Udyog Bharti</span>
+          <span>Member: AIAVIF</span>
+        </div>
+      </div>
+
     </div>
   </footer>
 
+  <!-- ============================================================
+       FLOATING WHATSAPP
+  ============================================================ -->
+  <a
+    href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="WhatsApp us"
+  >
+    <span class="whatsapp-float-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="script.js"></script>
+
   <script>
+    /* ── Products page: filter tabs ── */
     (function () {
-      const items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) || !items.length) return;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible');
-            observer.unobserve(entry.target);
-          }
+      var footerYear = document.getElementById('footer-year');
+      if (footerYear) {
+        footerYear.textContent = new Date().getFullYear();
+      }
+
+      var filterBtns = document.querySelectorAll('.filter-btn');
+      if (!filterBtns.length) return;
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+
+          /* Update active state */
+          filterBtns.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed', 'true');
+
+          var filter = btn.getAttribute('data-filter');
+
+          /* Show / hide sections */
+          var sections = document.querySelectorAll(
+            '[data-category]'
+          );
+          sections.forEach(function (section) {
+            if (filter === 'all') {
+              section.style.display = '';
+            } else if (
+              section.getAttribute('data-category') === filter
+            ) {
+              section.style.display = '';
+            } else {
+              section.style.display = 'none';
+            }
+          });
+
+          /* Show / hide individual product cards */
+          var products = document.querySelectorAll(
+            '[data-product]'
+          );
+          products.forEach(function (product) {
+            if (filter === 'all') {
+              product.style.display = '';
+            } else if (
+              product.getAttribute('data-product') === filter
+            ) {
+              product.style.display = '';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+
         });
-      }, { threshold: 0.15 });
-      items.forEach((el) => observer.observe(el));
+      });
     }());
   </script>
+
 </body>
 </html>
