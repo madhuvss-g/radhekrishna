@@ -1,318 +1,1038 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products & Supply | Radhekrishna Enterprises</title>
-  <meta name="description" content="Overview of G-MEX friction hinges and hardware supply range from Radhekrishna Enterprises, a small-scale industry active since 1993." />
+  <title>Clients | Radhekrishna Enterprises — Trusted by Contractors & Builders</title>
+  <meta name="description" content="Radhekrishna Enterprises supplies hinges and hardware to dealers, contractors and construction companies including NCL Buildtek, DEC Infra and Ahlada across India." />
+  <meta name="keywords" content="Radhekrishna Enterprises clients, NCL Buildtek, DEC Infra, Ahlada, hardware supplier contractors India" />
+  <meta name="robots" content="index, follow" />
 
-  <meta property="og:title" content="Products & Supply | Radhekrishna Enterprises" />
-  <meta property="og:description" content="Learn about G-MEX friction hinges and related hardware supply from Radhekrishna Enterprises." />
+  <meta property="og:title" content="Clients | Radhekrishna Enterprises" />
+  <meta property="og:description" content="Trusted by dealers, contractors and construction companies across Andhra Pradesh and Telangana since 1993." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="[Add website or Vercel URL here]/products.html" />
-  <meta property="og:image" content="[Add social preview image URL here]" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:url" content="https://madhuvss-g.github.io/radhekrishna/clients.html" />
+  <meta name="theme-color" content="#0a5c7a" />
 
   <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=cabinet-grotesk@500,600,700&display=swap"
+    rel="stylesheet"
+  />
 
-  <style>
-    /* Same base design system as index.html */
-    :root {
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1rem;
-      --text-lg: 1.125rem;
-      --text-xl: 1.5rem;
-      --text-2xl: 2rem;
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --radius-sm: 0.4rem;
-      --radius-md: 0.75rem;
-      --radius-lg: 1rem;
-      --color-bg: #f5f5f7;
-      --color-surface: #ffffff;
-      --color-surface-soft: #f9fafb;
-      --color-border: #e5e7eb;
-      --color-divider: #e5e5e5;
-      --color-text: #111827;
-      --color-text-muted: #4b5563;
-      --color-text-faint: #9ca3af;
-      --color-primary: #0f766e;
-      --color-primary-soft: #ecfdf5;
-      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.06);
-      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
-      --transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
-      --content-width: 1120px;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; text-size-adjust: none; scroll-padding-top: 4.5rem; }
-    body {
-      min-height: 100vh;
-      font-family: "General Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: var(--text-base);
-      line-height: 1.6;
-      color: var(--color-text);
-      background: radial-gradient(circle at top, #e5f3f2 0, #f5f5f7 48%, #f3f4f6 100%);
-    }
-    img, svg { display: block; max-width: 100%; height: auto; }
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; color: inherit; }
-    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
-
-    .skip-link { position: absolute; left: var(--space-4); top: -3rem; background: var(--color-primary); color:#fff; padding:var(--space-2)var(--space-4); border-radius:var(--radius-md); z-index:20;}
-    .skip-link:focus { top: var(--space-4); }
-
-    .frame { width: min(100% - 2.5rem, var(--content-width)); margin-inline: auto; }
-
-    header {
-      position: sticky; top: 0; z-index: 30;
-      backdrop-filter: blur(18px);
-      background: rgba(245,245,247,0.9);
-      border-bottom: 1px solid rgba(229,231,235,0.8);
-    }
-    .nav { display:flex; align-items:center; justify-content:space-between; min-height:4rem; gap:var(--space-4); }
-    .brand { display:inline-flex; align-items:center; gap:var(--space-3); padding-block:var(--space-2); }
-    .brand-mark {
-      width:2.4rem; height:2.4rem; border-radius:0.7rem; border:1px solid var(--color-border);
-      background:#fff; display:flex; align-items:center; justify-content:center;
-      box-shadow:0 6px 18px rgba(15,23,42,0.06);
-    }
-    .brand-main {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-sm); font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
-    }
-    .brand-sub { font-size:var(--text-xs); color:var(--color-text-faint); }
-    .nav-links { display:flex; list-style:none; gap:var(--space-4); font-size:var(--text-sm); }
-    .nav-links a {
-      padding-block:var(--space-2);
-      color:var(--color-text-muted);
-      border-bottom:2px solid transparent;
-      transition:color var(--transition), border-color var(--transition);
-    }
-    .nav-links a:hover,
-    .nav-links a:focus-visible { color:var(--color-primary); border-color:var(--color-primary); }
-
-    main section { padding-block: var(--space-10); }
-
-    .hero { padding-block: var(--space-12); }
-    .hero-grid { display:grid; gap:var(--space-8); align-items:center; }
-    .hero-eyebrow {
-      font-size:var(--text-xs); text-transform:uppercase; letter-spacing:0.14em;
-      color:var(--color-text-faint); margin-bottom:var(--space-2);
-    }
-    h1 {
-      font-family:"Cabinet Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
-      font-size:var(--text-2xl); line-height:1.1; letter-spacing:-0.04em;
-      max-width:18ch; margin-bottom:var(--space-3);
-    }
-    .hero-lead {
-      font-size:var(--text-lg); color:var(--color-text-muted);
-      max-width:40ch; margin-bottom:var(--space-4);
-    }
-    .hero-body { color:var(--color-text-muted); max-width:50ch; }
-
-    .hero-visual {
-      border-radius:1.25rem; background:var(--color-surface);
-      border:1px solid var(--color-border);
-      padding:var(--space-6); box-shadow:var(--shadow-soft);
-    }
-    .hero-placeholder-box {
-      border-radius:var(--radius-md); border:1px dashed var(--color-border);
-      padding:var(--space-4); background:var(--color-surface-soft);
-      font-size:var(--text-xs); color:var(--color-text-faint);
-    }
-
-    .section-heading { margin-bottom:var(--space-5); }
-    .section-heading h2 { font-size:var(--text-xl); margin-bottom:var(--space-2); }
-    .section-heading p { color:var(--color-text-muted); max-width:48ch; }
-
-    .card-grid { display:grid; gap:var(--space-4); }
-    .card {
-      background:var(--color-surface); border-radius:var(--radius-md); border:1px solid var(--color-border);
-      padding:var(--space-5); box-shadow:var(--shadow-card);
-      transition:border-color var(--transition), box-shadow var(--transition), transform var(--transition);
-    }
-    .card:hover { border-color:var(--color-primary); box-shadow:0 16px 40px rgba(15,23,42,0.08); transform:translateY(-2px); }
-    .card h3 { font-size:var(--text-lg); margin-bottom:var(--space-3); }
-    .card p { font-size:var(--text-sm); color:var(--color-text-muted); margin-bottom:var(--space-2); }
-    .card ul { list-style:none; padding-left:0; }
-    .card li { font-size:var(--text-sm); color:var(--color-text-muted); padding-block:0.25rem; }
-
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity 420ms var(--transition), transform 420ms var(--transition); }
-    .reveal--visible { opacity:1; transform:translateY(0); }
-
-    footer {
-      border-top:1px solid var(--color-divider); padding-block:var(--space-6);
-      background:#f9fafb; font-size:var(--text-sm); color:var(--color-text-faint);
-    }
-    .footer-row { display:flex; flex-direction:column; gap:var(--space-2); }
-
-    @media (min-width:768px) {
-      .hero-grid { grid-template-columns:minmax(0,1.35fr) minmax(280px,1fr); }
-      .card-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
-      .footer-row { flex-direction:row; justify-content:space-between; align-items:center; }
-    }
-    @media (max-width:767px) {
-      .nav { flex-direction:column; align-items:flex-start; padding-block:var(--space-2); }
-      .nav-links { width:100%; justify-content:flex-start; overflow-x:auto; }
-    }
-  </style>
-</head>
-<body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <header>
-    <div class="frame nav">
-      <a href="index.html" class="brand" aria-label="Radhekrishna Enterprises homepage">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="10" height="14" rx="2" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M9 5v14" stroke="#0f766e" stroke-width="1.6" />
-            <path d="M14 12h7" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" />
-          </svg>
-        </span>
-        <span>
-          <div class="brand-main">Radhekrishna Enterprises</div>
-          <div class="brand-sub">G-MEX friction hinges & hardware supply</div>
-        </span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="clients.html">Clients</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="frame hero-grid">
-        <div class="reveal">
-          <p class="hero-eyebrow">Products & Supply</p>
-          <h1>G-MEX friction hinges, plus the hardware that sits around them.</h1>
-          <p class="hero-lead">
-            The core product is G-MEX friction hinges manufactured by Radhekrishna Enterprises. Around that, the company also supplies hardware materials that are not limited to metals.
-          </p>
-          <p class="hero-body">
-            This page is designed to give buyers a clear view of what is available today, and where they can ask for more detail or share their specific hinge and hardware requirements.
-          </p>
-        </div>
-
-        <aside class="hero-visual reveal" aria-label="Placeholder for product imagery or layout">
-          <div class="hero-placeholder-box">
-            <strong>Product image layout (optional)</strong><br />
-            Here you can later place a simple photo or layout showing G-MEX friction hinges and related hardware items together.<br /><br />
-            [Add product photo / simple flat-lay image here in the future]
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- CATEGORIES -->
-    <section>
-      <div class="frame">
-        <div class="section-heading reveal">
-          <h2>What Radhekrishna Enterprises currently offers</h2>
-          <p>
-            This is intentionally kept simple and factual. If you expand the range in the future, you can add more sections or details here.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card reveal">
-            <h3>G-MEX friction hinges</h3>
-            <p>
-              Radhekrishna Enterprises is the sole manufacturer of G-MEX friction hinges. That means clients are working directly with the manufacturer, not just a trader.
-            </p>
-            <ul>
-              <li>• [Add list of available hinge sizes here]</li>
-              <li>• [Add list of variants or models here]</li>
-              <li>• [Add brief technical points that are safe to share publicly]</li>
-            </ul>
-          </article>
-
-          <article class="card reveal">
-            <h3>Hinges manufacturing & supplying</h3>
-            <p>
-              Beyond the G-MEX name, the company’s work still comes back to hinges: manufacturing and supplying them to match client needs.
-            </p>
-            <ul>
-              <li>• [Add hinge types or application areas you support]</li>
-              <li>• [Add note about small, medium, or large quantity support]</li>
-            </ul>
-          </article>
-
-          <article class="card reveal">
-            <h3>Hardware supply beyond metals</h3>
-            <p>
-              The supply scope is not limited to metals. Radhekrishna Enterprises can also supply several hardware materials like plastic and other items connected to the project.
-            </p>
-            <ul>
-              <li>• Plastic hardware items [Add examples when ready]</li>
-              <li>• Metal hardware items [Add examples when ready]</li>
-              <li>• [Add any other material categories you frequently supply]</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW TO REQUEST DETAILS -->
-    <section>
-      <div class="frame">
-        <article class="card reveal">
-          <h3>How to request exact specs</h3>
-          <p>
-            Many buyers prefer to share a simple requirement list instead of browsing long tables. This site follows that approach.
-          </p>
-          <p>
-            You can send a requirement that includes items like hinge type, approximate quantity, and any basic size or material preferences. The team can then respond with what fits from the G-MEX and hardware supply range.
-          </p>
-          <p>
-            Use the contact page to send that requirement in your own words:
-          </p>
-          <p>
-            <a href="contact.html" style="color: var(--color-primary);">Go to the contact form →</a>
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="frame footer-row">
-      <p>Radhekrishna Enterprises — small-scale industry and sole manufacturer of G-MEX friction hinges, active since 1993.</p>
-      <p>This page is a structured overview of what you already do today, with room to add more technical detail later.</p>
-    </div>
-  </footer>
+  <link rel="stylesheet" href="styles.css" />
 
   <script>
     (function () {
-      const items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) || !items.length) return;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal--visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      items.forEach((el) => observer.observe(el));
+      try {
+        var t = localStorage.getItem('rke-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
     }());
   </script>
+
+  <style>
+    /* ── Clients page specific styles ── */
+
+    .page-hero {
+      position: relative;
+      padding-block: var(--space-16) var(--space-12);
+      overflow: hidden;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--gradient-hero);
+      pointer-events: none;
+    }
+
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--color-border-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-border-soft) 1px, transparent 1px);
+      background-size: 52px 52px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-hero h1 {
+      max-width: 22ch;
+      margin-bottom: var(--space-4);
+    }
+
+    .page-hero h1 em {
+      font-style: normal;
+      background: var(--gradient-peacock);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-hero-lead {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      line-height: 1.75;
+    }
+
+    /* Client type cards */
+    .client-type-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .client-type-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  transform var(--transition),
+                  background var(--transition-slow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .client-type-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gradient-peacock);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .client-type-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+
+    .client-type-card:hover::before {
+      opacity: 1;
+    }
+
+    .client-type-icon {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: var(--radius-md);
+      background: var(--color-primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-4);
+      transition: background var(--transition);
+    }
+
+    .client-type-card:hover .client-type-icon {
+      background: var(--gradient-peacock);
+    }
+
+    .client-type-icon svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--color-primary);
+      transition: color var(--transition);
+    }
+
+    .client-type-card:hover .client-type-icon svg {
+      color: #fff;
+    }
+
+    .client-type-card h3 {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-2);
+    }
+
+    .client-type-card p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: var(--space-4);
+    }
+
+    .client-examples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    /* Named clients section */
+    .named-clients-grid {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .named-client-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: var(--space-5);
+      align-items: flex-start;
+      transition: border-color var(--transition),
+                  box-shadow var(--transition),
+                  transform var(--transition),
+                  background var(--transition-slow);
+    }
+
+    .named-client-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .named-client-avatar {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--radius-md);
+      background: var(--gradient-peacock);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: "Cabinet Grotesk", system-ui, sans-serif;
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .named-client-info h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-1);
+    }
+
+    .named-client-info p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: var(--space-3);
+    }
+
+    .named-client-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    /* Reach section */
+    .reach-grid {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .reach-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-sm);
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .reach-card h3 {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-3);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .reach-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .reach-dot-active {
+      background: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-soft);
+    }
+
+    .reach-dot-open {
+      background: var(--color-secondary);
+      box-shadow: 0 0 0 3px var(--color-secondary-soft);
+    }
+
+    .reach-card p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    .reach-state-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-3);
+    }
+
+    /* Reviews placeholder */
+    .reviews-placeholder {
+      background: var(--color-surface-soft);
+      border: 1.5px dashed var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-10);
+      text-align: center;
+      transition: background var(--transition-slow),
+                  border-color var(--transition-slow);
+    }
+
+    .reviews-placeholder-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: var(--color-primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      margin-bottom: var(--space-4);
+    }
+
+    .reviews-placeholder-icon svg {
+      width: 1.4rem;
+      height: 1.4rem;
+      color: var(--color-primary);
+    }
+
+    .reviews-placeholder h3 {
+      font-size: var(--text-lg);
+      margin-bottom: var(--space-2);
+    }
+
+    .reviews-placeholder p {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      max-width: 40ch;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+
+    @media (min-width: 640px) {
+      .client-type-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .named-clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .reach-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .client-type-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="frame nav">
+
+      <a href="index.html" class="brand"
+        aria-label="Radhekrishna Enterprises — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+              fill="rgba(255,255,255,0.9)" />
+            <circle cx="12" cy="8" r="2"
+              fill="rgba(255,255,255,0.5)" />
+            <path
+              d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+              fill="rgba(255,255,255,0.7)" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-main">Radhekrishna Enterprises</span>
+          <span class="brand-sub">Hinges &amp; Hardware · Since 1993</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="clients.html" aria-current="page">Clients</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="nav-cta">
+          Get Quote
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+
+        <button
+          class="nav-mobile-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu"
+    aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="clients.html" aria-current="page">Clients</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-menu-cta">Get a Quote →</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero" aria-labelledby="clients-heading">
+      <div class="page-hero-bg"   aria-hidden="true"></div>
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="frame page-hero-inner">
+        <div class="reveal">
+          <span class="eyebrow">Our clients</span>
+          <h1 id="clients-heading">
+            Trusted by contractors,<br />
+            <em>builders and dealers.</em>
+          </h1>
+          <p class="page-hero-lead">
+            Since 1993, Radhekrishna Enterprises has supplied hinges
+            and hardware to dealers, contractors and construction
+            companies across Andhra Pradesh and Telangana — including
+            companies working on government projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHO WE SERVE ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="who-heading"
+      style="background: var(--color-bg);"
+    >
+      <div class="frame">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Who we serve</span>
+          <h2 id="who-heading">
+            Three types of buyers<br />
+            we work with regularly.
+          </h2>
+          <p>
+            Our clients range from individual hardware dealers to
+            large construction companies handling government projects.
+            Here is who typically orders from us.
+          </p>
+        </div>
+
+        <div class="client-type-grid">
+
+          <div class="client-type-card reveal delay-1">
+            <div class="client-type-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3>Hardware Dealers</h3>
+            <p>
+              Local and regional hardware dealers who stock our
+              hinges and stays for resale to fabricators,
+              contractors and end customers. Repeat orders
+              are the norm here.
+            </p>
+            <div class="client-examples">
+              <span class="badge badge-primary">Bulk Orders</span>
+              <span class="badge badge-primary">Repeat Supply</span>
+              <span class="badge badge-primary">AP &amp; Telangana</span>
+            </div>
+          </div>
+
+          <div class="client-type-card reveal delay-2">
+            <div class="client-type-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14"
+                  rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+              </svg>
+            </div>
+            <h3>Construction Companies</h3>
+            <p>
+              Mid to large construction companies that need
+              hinges and hardware for residential and commercial
+              projects — including companies working on
+              government-linked contracts.
+            </p>
+            <div class="client-examples">
+              <span class="badge badge-primary">NCL Buildtek</span>
+              <span class="badge badge-primary">DEC Infra</span>
+              <span class="badge badge-primary">Govt Projects</span>
+            </div>
+          </div>
+
+          <div class="client-type-card reveal delay-3">
+            <div class="client-type-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3>Window Fabricators</h3>
+            <p>
+              uPVC and aluminium window fabricators who need
+              friction stays, pivot hinges and window stays
+              as part of their window manufacturing and
+              installation work.
+            </p>
+            <div class="client-examples">
+              <span class="badge badge-primary">uPVC Fabricators</span>
+              <span class="badge badge-primary">Aluminium Windows</span>
+              <span class="badge badge-primary">Ahlada</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NAMED CLIENTS ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="named-heading"
+      style="background: var(--color-surface);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Known clients</span>
+          <h2 id="named-heading">
+            Companies that have<br />
+            ordered from us.
+          </h2>
+          <p>
+            These are some of the companies we have supplied
+            to. Many more dealers and contractors across
+            Andhra Pradesh and Telangana order regularly
+            without being listed here.
+          </p>
+        </div>
+
+        <div class="named-clients-grid">
+
+          <div class="named-client-card reveal delay-1">
+            <div class="named-client-avatar"
+              aria-hidden="true">
+              NC
+            </div>
+            <div class="named-client-info">
+              <h3>NCL Buildtek</h3>
+              <p>
+                Construction company involved in large-scale
+                residential and commercial projects, including
+                government-linked contracts across Telangana
+                and Andhra Pradesh.
+              </p>
+              <div class="named-client-tags">
+                <span class="badge badge-primary">
+                  Construction
+                </span>
+                <span class="badge badge-primary">
+                  Govt Projects
+                </span>
+                <span class="badge badge-primary">
+                  Bulk Orders
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="named-client-card reveal delay-2">
+            <div class="named-client-avatar"
+              aria-hidden="true">
+              DI
+            </div>
+            <div class="named-client-info">
+              <h3>DEC Infra</h3>
+              <p>
+                Infrastructure and construction company that
+                has used our hardware supply for projects
+                across the region, including government
+                infrastructure work.
+              </p>
+              <div class="named-client-tags">
+                <span class="badge badge-primary">
+                  Infrastructure
+                </span>
+                <span class="badge badge-primary">
+                  Govt Projects
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="named-client-card reveal delay-3">
+            <div class="named-client-avatar"
+              aria-hidden="true"
+              style="background: var(--gradient-feather);
+                     color: var(--color-primary);">
+              AH
+            </div>
+            <div class="named-client-info">
+              <h3>Ahlada</h3>
+              <p>
+                Window and door systems company that sources
+                hinges and stays from us for their fabrication
+                and installation work across the region.
+              </p>
+              <div class="named-client-tags">
+                <span class="badge badge-secondary">
+                  Window Systems
+                </span>
+                <span class="badge badge-secondary">
+                  Fabrication
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="named-client-card reveal delay-4"
+            style="background: var(--gradient-feather);
+                   border-style: dashed;">
+            <div class="named-client-avatar"
+              aria-hidden="true"
+              style="background: var(--color-primary-soft);">
+              <svg viewBox="0 0 24 24" fill="none"
+                stroke="var(--color-primary)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="width:1.4rem;height:1.4rem;">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
+            <div class="named-client-info">
+              <h3>Many more dealers &amp; contractors</h3>
+              <p>
+                Dozens of hardware dealers and contractors
+                across AP and Telangana order regularly.
+                If you are a dealer or contractor looking
+                for a reliable supplier, get in touch.
+              </p>
+              <div class="named-client-tags">
+                <a href="contact.html"
+                  class="badge badge-primary"
+                  style="cursor:pointer;">
+                  Become a client →
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REACH ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="reach-heading"
+      style="background: var(--color-bg);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Our reach</span>
+          <h2 id="reach-heading">
+            Strong in the south.<br />
+            Open to the world.
+          </h2>
+        </div>
+
+        <div class="reach-grid">
+
+          <div class="reach-card reveal delay-1">
+            <h3>
+              <span class="reach-dot reach-dot-active"
+                aria-hidden="true"></span>
+              Current strong market
+            </h3>
+            <p>
+              Most of our established dealer and contractor
+              relationships are in Andhra Pradesh and Telangana.
+              These are long-standing relationships built over
+              decades of consistent supply.
+            </p>
+            <div class="reach-state-list">
+              <span class="badge badge-primary">
+                Andhra Pradesh
+              </span>
+              <span class="badge badge-primary">
+                Telangana
+              </span>
+              <span class="badge badge-primary">
+                Hyderabad
+              </span>
+            </div>
+          </div>
+
+          <div class="reach-card reveal delay-2">
+            <h3>
+              <span class="reach-dot reach-dot-open"
+                aria-hidden="true"></span>
+              Open to all enquiries
+            </h3>
+            <p>
+              We are open to orders from anywhere in India
+              and internationally. If you have a requirement
+              for hinges or hardware, send it to us and we
+              will respond with what we can do.
+            </p>
+            <div class="reach-state-list">
+              <span class="badge badge-secondary">
+                Pan India
+              </span>
+              <span class="badge badge-secondary">
+                International
+              </span>
+              <span class="badge badge-secondary">
+                Worldwide Enquiries
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REVIEWS PLACEHOLDER ── -->
+    <section
+      class="section-pad"
+      aria-labelledby="reviews-heading"
+      style="background: var(--color-surface);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+
+        <div class="section-header centered reveal">
+          <span class="eyebrow">Reviews</span>
+          <h2 id="reviews-heading">
+            What clients say.
+          </h2>
+        </div>
+
+        <div class="reviews-placeholder reveal">
+          <div class="reviews-placeholder-icon"
+            aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <h3>Reviews coming soon</h3>
+          <p>
+            We are collecting reviews from our clients.
+            Check back here soon — or visit our
+            <a
+              href="https://www.indiamart.com/radhekrishna-enterprises-hyderabad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--color-primary);
+                     font-weight: 600;"
+            >
+              IndiaMart profile
+            </a>
+            for current ratings and feedback.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section
+      class="section-pad"
+      style="background: var(--color-bg);
+             border-top: 1px solid var(--color-border);"
+    >
+      <div class="frame">
+        <div class="cta-banner">
+          <div class="cta-banner-glow" aria-hidden="true"></div>
+          <div class="cta-banner-inner reveal">
+            <span class="eyebrow"
+              style="color:rgba(255,255,255,0.5);
+                     justify-content:center;
+                     margin-bottom: var(--space-4);">
+              Join our clients
+            </span>
+            <h2 style="color:#fff; max-width:22ch;
+                       margin-inline:auto;
+                       margin-bottom: var(--space-4);">
+              Ready to place your first<br />
+              or next order?
+            </h2>
+            <p style="color:rgba(255,255,255,0.6);
+                      max-width:44ch; margin-inline:auto;
+                      margin-bottom: var(--space-8);">
+              Whether you are a dealer, contractor or
+              fabricator — share your requirement and
+              we will respond directly with pricing
+              and availability.
+            </p>
+            <div class="cta-actions">
+              <a
+                href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20place%20an%20order."
+                class="btn btn-white btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  style="width:1.1rem;height:1.1rem;
+                         color:#25d366">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+              <a href="contact.html"
+                class="btn btn-ghost-white btn-lg">
+                Contact Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="frame">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3C9 3 6 5 6 8c0 2 1 3.5 3 4.5V18h6v-5.5c2-1 3-2.5 3-4.5 0-3-3-5-6-5z"
+                  fill="rgba(255,255,255,0.9)" />
+                <circle cx="12" cy="8" r="2"
+                  fill="rgba(255,255,255,0.5)" />
+                <path
+                  d="M9 18h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z"
+                  fill="rgba(255,255,255,0.7)" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-main">
+                Radhekrishna Enterprises
+              </span>
+              <span class="brand-sub">
+                Hinges &amp; Hardware · Since 1993
+              </span>
+            </span>
+          </a>
+          <p class="footer-brand-desc">
+            Manufacturer of pivot hinges, stay hinges and
+            friction stays. Hardware supplier to dealers,
+            contractors and construction companies across
+            India. Based in Hyderabad since 1993.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">Pages</p>
+          <nav class="footer-links"
+            aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="clients.html">Clients</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Products</p>
+          <nav class="footer-links"
+            aria-label="Product links">
+            <a href="products.html#friction-stays">
+              Window Friction Stays
+            </a>
+            <a href="products.html#pivot-hinges">
+              Pivot Hinges
+            </a>
+            <a href="products.html#window-stays">
+              Window Stays
+            </a>
+            <a href="products.html#friction-hinges">
+              Friction Hinges
+            </a>
+            <a href="products.html#brass-stays">
+              Brass Window Stays
+            </a>
+            <a href="products.html#supply">
+              Hardware Supply
+            </a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-links">
+            <a href="tel:+919849426939">
+              +91 98494 26939
+            </a>
+            <a href="mailto:gattupallibadari@gmail.com">
+              gattupallibadari@gmail.com
+            </a>
+            <a
+              href="https://maps.app.goo.gl/1gUDApdGsWqmmssV7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fatehnagar, Balanagar,<br />
+              Hyderabad – 500018
+            </a>
+            <a
+              href="https://wa.me/919849426939"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp →
+            </a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <p class="footer-col-title">Hours</p>
+            <p style="font-size: var(--text-xs);
+                      color: var(--color-text-faint);
+                      line-height: 1.8;">
+              Tue – Sun: 9:00 AM – 5:30 PM<br />
+              Monday: Closed<br />
+              State &amp; National Holidays: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="footer-year">2025</span>
+          Radhekrishna Enterprises. All rights reserved.
+          Sole Proprietor: B. Gattupalli.
+        </p>
+        <div style="display:flex; gap: var(--space-5);
+                    flex-wrap:wrap; align-items:center;">
+          <span>GST Registered · Hyderabad</span>
+          <span>Member: Laghu Udyog Bharti</span>
+          <span>Member: AIAVIF</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/919849426939?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    title="WhatsApp us"
+  >
+    <span class="whatsapp-float-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor"
+      aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById('footer-year');
+      if (el) el.textContent = new Date().getFullYear();
+    }());
+  </script>
+
 </body>
 </html>
